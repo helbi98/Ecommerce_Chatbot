@@ -1,0 +1,994 @@
+version: '3.1'
+nlu:
+- intent: place_order
+  examples: |
+    - I have to order something, can I get some help?
+    - how do I order a product?
+    - want help to earn an few of your item
+    - I am trying to order a few of your  product
+    - help to buy some articles
+    - help me to shop some of your product
+    - is it possible to order a few of your product?
+    - i do not know what i need to do to buy several items
+    - how do I shop some products?
+    - help me shop several damn articles
+    - I want assistance to shop several articles
+    - I try to make an order
+    - I need assistance ordering some articles
+    - where do I earn some products?
+    - how do i do  a purchase
+    - I have to order some of your item, can I get some help?
+    - how to purchase an item?
+    - I need assistance to acquire an article
+    - i want assistance earning several products
+    - I do not know how I can buy some of your article
+    - I need to order some articles
+    - i don know what to do to buy some of ur product
+    - where to pucrhase some items
+    - I amtrying to shop some products
+    - need help shopping a few of ur item
+    - I need assistance to shop a product
+    - how to buy a product?
+    - what do I have to do to acquire several products?
+    - assistance to buy several of your product
+    - where do I make a purchase?
+    - how to order some products?
+    - i needhelp to acquire several items
+    - I need help to purchase some bloody products
+    - i do not know what i have to do to make a purchase
+    - I have got to earn a product, I need help
+    - can ya help me ordering something
+    - i dont know how i can acquire some of ur item
+    - I do not know how to acquire a few of your product
+    - want help acquiring several of ur item
+    - what do I have to do to order somethingh?
+    - how to purchase a few of your product?
+    - earn a few of your product
+    - how do I order some of your article?
+    - can uhelp me to shop some items
+    - i do not know what i need to do to hsop several articles
+    - I have to shop several articles
+    - I don't know what to do to shop an article
+    - need assistance to order a few of ur item
+    - i dont know how to acquire an article
+    - I want to acquire some articles
+    - where do I buy something?
+    - I don't know what to do to order a few of your article
+    - help me make an order
+    - I try to order some of your article
+    - where can i order some of ur article
+    - help buying some of your product
+    - where can i order somedthing
+    - need assistance to acquire several of ur article
+    - where do I earn an article?
+    - I do not know how to acquire some of your article
+    - I want help to acquire several  of your product
+    - I need to shop several of ypur article, can I get some help?
+    - how do I order somearticles?
+    - is it possible to purchase a few of your article?
+    - I don't know how I can shop several articles
+    - assistance acquiring a few of ur item
+    - help me earn several products
+    - I don't know what I have to do to buy some of your article
+    - help me to uby several products
+    - i want assistance acquiring several of ur product
+    - I want assistance buying some of your product
+    - I do not know what to do to earn some items
+    - I want help doing a purchase
+    - need assistance to earn an item
+    - how do I acquire several articles?
+    - I need assistance ordering several bloody items
+    - I want assistance earning some of your product
+    - wanna shop a few of ur article
+    - assistance to purchase something
+    - i have got to buy several articles
+    - shopping article
+    - I do not know what to do to acquire several articles
+    - I don't know what to do to earn several items
+    - I want help to purchase several damn products
+    - I do not know how to shop some items
+    - I want assistance to order a damn product
+    - I have got to shop a damn item, how to do it?
+    - where do I shop several of your product?
+    - where do I purchase some articles?
+    - help me earn several of your item
+    - can you help me to  buy some articles?
+    - I don't know how I can earn a few of your article
+    - can you help me shop several of your product?
+    - I need to earn several goddamn items, how can I do it?
+    - I need assistance to buy several articles
+    - I would like to purchase several products, will you help me?
+    - I don't know how to acquire some articles
+    - can you help me earning several products?
+    - where do I earn seberal products?
+    - i want assistance acquiring a few of ur article
+    - i dont know how  to purchase several products
+    - I am trying to shop something
+    - I do not know how I can buy several items
+    - I need to order a bloody item
+    - want assistance ordering a few of your article
+    - I don't know what I have to do to order several products
+    - how do i shop some products
+    - shop several articles
+    - assistance purchasing some items
+    - can you help me shopping some items?
+    - i need help buying several of ur item
+    - I'm trying to acquire some of ur item
+    - i have to acquire a product
+    - i do not know what to do to shop several of ur item
+    - can you help me purchasing a damn item?
+    - I don't know what to do to order several items
+    - how can I earn a few fo your article?
+    - help me to acquire some of your article
+    - what do I have to do to buy some items?
+    - i do not know what i have to do to earn some items
+    - assistance earning an item
+    - is it possible to purchase several bloody items?
+    - I want help to purchase some articles
+    - I don't know what to do to buy some items
+    - i want assistance to shop a product
+    - I'm trying to earn a product
+    - i dont know how to order several articles
+    - i dont know what i have to do to order a few of ur article
+    - buying article
+    - is it possible to shop some items?
+    - I do not know what I have to do to shop some articles
+    - i need help purchasing several items
+    - how can i purchase some of ur product
+    - I have to purchase several of your product, I need help
+    - i want help ordering an article
+    - want help to acquire several of your product
+    - i domt know how to buy several of ur item
+    - is it possible to shop some of your item?
+    - I wan assistance purchasing several of your article
+    - i need help ordering several articles
+    - I need to earn a few of your article, how do I do it?
+    - assistance to acquire several products
+    - is it possible to order some of your article?
+    - how can I purchase several of your article?
+    - i dont know what i need to do to shop a few of ur product
+    - i try to acquire some items
+    - buy several articles
+    - how to earn several articles
+    - I do not know what I need to do to make na order
+    - can ya help me shop some articles
+    - can you help me place an order?
+    - how to buy some iterms?
+    - I don't know how toearn something
+    - I don't know how I can earn an article
+    - how can i shop a few of ur article
+    - can you help me acquiring a few of your product?
+    - where to buy an item
+    - I need to acquire some of your item, help me
+    - is it possible to acquire some of ur product
+    - I need assistance shopping something
+    - can you help me order several articles?
+    - I need to shop some products
+    - I don't know what I have to do to buy a product
+    - could uhelp me purchase a goddamn item
+    - assistance shopping an item
+    - I want help shopping an article
+    - assistance to acquire some of  ur item
+    - I don't know what to do to purchase some of your article
+    - I don't know what I need to do to earn some bloody products
+    - help me earning several of your article
+    - I want to earn an article
+    - want help shopping several of your item
+    - how to shop some articles?
+    - help me to earn some of ur item
+    - I don't know how I can make a purchase
+    - I don't know how I can shop some items
+    - help me to buy several of ur article
+    - assistance earning a damn product
+    - i need help to maake an order
+    - I don't know what I have to do to earn something
+    - i have got to acquire sme articles help me
+    - I am trying to purchase several items
+    - want help acquiring som items
+    - I have to purchase several of your article
+    - I don't know what to do to purchase several products
+    - I don't know what I have to do to order some items
+    - help ordering soem of your product
+    - wanna purchase  several products
+    - i need assistance buyig several of ur article
+    - I need to purchase several items, how can I do it?
+    - help me order solme of ur article
+    - is it possible to purchase some products
+    - what do I havew to do to earn a few of your article?
+    - can you help me purchasing some articles?
+    - where to order several of your product?
+    - wanna acquire several of ur product how do i do it
+    - I'd like to order some of ur article how coupd i do it
+    - would ig be possible to order some bloody articles?
+    - I don't know what I need to do to acquire some of your item
+    - where can i acquire an few of ur article
+    - order several of your article
+    - can uhelp me to order some of ur item
+    - I need assistance purchasing several products
+    - I want assistance purcahsing a few of your item
+    - I want asistance to acquire a product
+    - can you help me earning something?
+    - help to place an order
+    - I would like to do a purchase, can you help me?
+    - I have to buy some of yout item
+    - I do not know what to do to earn some products
+    - how do I buy some articles?
+    - I need to earn some of your article, can you help me?
+    - can uhelp me to buy some items
+    - how od i order some articles
+    - how can i purchasse a product
+    - i do not know what to do to acquire several of ur item
+    - help to earn several of your item
+    - want assistance to acquire several items
+    - is it possible to order some of ur item
+    - ordr several of ur product
+    - need to purchase several of ur article
+    - wanna acquire some of ur article
+    - I want to earn some goddamn items, I need assistance
+    - I want help odering some articles
+    - I don't know what I need to do to shop some of your article
+    - buying item
+    - help em buy several of ur article
+    - I want assistance to acquire several  of your product
+    - can you help me to order some items ?
+    - need help to place an oredr
+    - where can I order some articles?
+    - I do not know what I have to do to buy an article
+    - how do I earn several of your article?
+    - I want assistance acquiring several items
+    - I have to earn several of your product
+    - i ahve got to shop an article will uhelp me
+    - acquire an item
+    - I don't know what I need to do to acquire something
+    - how to shop a product?
+    - i need help purchasing some of ur item
+    - I need to earn some articles, how can I do it?
+    - I do not know what I need to do to acquire a product
+    - I try to purchase some of your item
+    - where to purchase several products?
+    - I don't know what I have to do to earn a few of your item
+    - acquire several products
+    - I need help purchasing several of your product
+    - what do I need to do to buy an item?
+    - I don't know how I can order some of your article
+    - I want assistance to purchase a few of your item
+    - i have got to acquire somethingi need assistance
+    - I want help buying some of your product
+    - need to order a few of ur item
+    - i want help ordering some articles
+    - can you help me earning several of your article?
+    - i try to buy an article
+    - I want help ordering a few of your product
+    - can uhelp me buying an artikcle
+    - I need assistance buying an article
+    - I do not know what I need to do to buy some items
+    - wasnna acquire some articles can i get some help
+    - need to buy a few of ur item
+    - help to purchase several of your item
+    - can ya help me purchase several items
+    - I have got to shop some of your article, how do I do it?
+    - where to buy some of your article?
+    - I have got to purchase several of your item
+    - I don't know how I can buy several of yur product
+    - i need assistance acquiring some of ur product
+    - where to shop an item?
+    - I'm trying to buy a few of ur item
+    - I need to acquire some products, can I get some help?
+    - i dont know how to order several of ur article
+    - need assistance acquiring several articles
+    - where to acquire several items
+    - I need assistance to buy several products
+    - is it possible to acquire sevdral of ur product
+    - I have got to earn some of your product, how can I do it?
+    - i need assistance to buy some articles
+    - I have to acquire a few of your article, can you help me?
+    - where can i order an article
+    - I do not know what I need to do to purchase something
+    - where can i shop something
+    - what do i have to do to earn several of ur item
+    - can you help me order a few of your product?
+    - where can i shop some articles
+    - I do not know what I need to do to buy an article
+    - is it possible to buy some items?
+    - earn a product
+    - I don't know hwat to do to earn several items
+    - I want help buying an article
+    - order anitem
+    - help me to shop some items
+    - assistance to shop some of ur article
+    - I have to purchase some of your article, help me
+    - i need assistance toacquire several products
+    - I have got to earn some of your article
+    - I want help to purchase something
+    - I don't know how I can shop several of your product
+    - I do not know what to do to acquire several damn products
+    - I have to purchase several of your item
+    - i want assistance to buy some products
+    - I would like to earn a product, could I get some help?
+    - where to shop some of ur item
+    - help me to order several articles
+    - i need help buying some of ur item
+    - need assistance purchasing some of ur article
+    - i have got to acquire several items
+    - I do not know how I can purchase a few of your article
+    - i do not know what to do to earn some items
+    - I have got to earn several of your item, will you help me?
+    - I have to order a bloody product, how can I do it?
+    - I need assistance earning several articles
+    - I try to purchase a few of your article
+    - what do I need to do to order several of your item?
+    - what do i have to do to earn a few of ur product
+    - i dont know what to do to acquire a product
+    - I am trying to order several of your article
+    - I want help to place an order
+    - what do I need to do to purchase a product?
+    - I need help acquiring some prdoucts
+    - I want to shop a few of your product
+    - I don't know what I have to do to buy some products
+    - where do I buy several products?
+    - where can i eanr a few of ur item
+    - where do I order an article?
+    - how can i buy a few of ur product
+    - I don't know what I have to do to purchase something
+    - earning something
+    - how do I acquire some of your product?
+    - I have to earn some articles, help me
+    - want assistance earning  something
+    - I have got to acquire some items, I need help
+    - can you help me to order several articles?
+    - i dont know what to do to order a product
+    - where can I buy some of your article?
+    - help purchasing some bloody articles
+    - I don't know what I need to do to earn some items
+    - can unelp me shop a few of ur article
+    - how to purchase a few of your item?
+    - where do I order something?
+    - can you help me buy a product?
+    - I would like to order an item, I need assistance
+    - I am trying to purchase several of your article
+    - wanna place an order can ya help me
+    - what do I need to do to order something?
+    - i do not know how to acquire some items
+    - I try to buy some goddamn articles
+    - I would like to shop an item, can I get some help?
+    - help me purchase some of your item
+    - I am trying to order several of your item
+    - I want to buy several of your article
+    - i want assistance earning some products
+    - is it possible to order several of ur product
+    - i have to purchase some items
+    - what do i need to do to buy a product
+    - I need to shop several of your item, help me
+    - I want help to order an article
+    - help me acquire some products
+    - is it possible to buy several items
+    - I have to acquire a bloody item, I need assistance
+    - i need assistance to order a few of ur prodcut
+    - I try to purchase some articles
+    - assistance to buiy some of your product
+    - can you help me to acquire an few of your product?
+    - where do I earn something?
+    - assistance to order some  of ur item
+    - i dont know what i need to do to order an item
+    - want help to shop a few of ur article
+    - I have got to earn a few of your product
+    - I would like to acquire something, how to do it?
+    - where to acquire several of your article?
+    - I want help buying several articles
+    - how do I purchase several of your product ?
+    - how to purchase several items?
+    - where to acquire some of ur item
+    - I don't know how I can order a few of your article
+    - I need help making  a purchase
+    - help me to earn some of your article
+    - what do I have to do to acquire some products?
+    - I need to earn a goddamn article, could you help me?
+    - I do not know how to order something
+    - help me to acquire a few of your item
+    - wqhere can i order some of ur article
+    - i dont know how i can buy a few of ur product
+    - need help to make an order
+    - where do I shop a few of your article?
+    - i want assistance acquiring some of ur article
+    - can you help me shop a few of your article?
+    - how can  i purchase something
+    - i do not know how i can acquire several prdoucts
+    - I don't know how to order several of your product
+    - I want help to acquire some of your rpoduct
+    - i try to purchase some of ur product
+    - assistance shopping some of your article
+    - i have got to order a product could i get some help
+    - I don't kmow how I can order several articles
+    - i have got to  shop some of ur product
+    - could you help me buying several articles?
+    - I'm trying to buy a  product
+    - i do not know what i need to do to purchase several products
+    - i have glt to buy a few of ur item help me
+    - I need to order a product, how do I do it?
+    - i do not know how to buy several of ur item
+    - I do not know how I can buy a few of your article
+    - need help to shop several of ur item
+    - i want help  earning several articles
+    - help to buy an few of your product
+    - i dont know how i can purchase a product
+    - how to shop some articles
+    - assistance shopping a few of ur product
+    - where can I acquire a few of your article?
+    - what do I need to do to buy sxome products?
+    - where can I shop several of your article?
+    - need help to earn an item
+    - I do not know what to do to buy some of your product
+    - want assistance purchasing some of ur product
+    - I am trying to oredr several of your article
+    - want help acquiring a few of your article
+    - I need assistance to purchase some articles
+    - i need assistance to purchase several of ur item
+    - can uhelp me purcahsing an article
+    - can uhelpp me to order some of ur product
+    - assistance shopping some of your product
+    - i do not know how i can acquire a product
+    - is it possible to order several of your article?
+    - assistance ordering some bloodyproducts
+    - I have got to earn some products
+    - assistance to shop some products
+    - I want to acquire a few of your product, how can I do it?
+    - what do I need to do to order a few of your product?
+    - can you help me shopping several of your article?
+    - I want help to earn something
+    - what do i hgave to do to shop some of ur item
+    - can you help me acquire several products?
+    - need help to order several of ur artcle
+    - where to purchase some items
+    - I don't knolw what I have to do to shop some of your product
+    - need help earning several of your article
+    - I want to order a few of your item, can I get some help?
+    - I want assistance buying a few of your item
+    - I don't know what to do to shop some of your article
+    - how can I earn some of your article?
+    - i need assistance acquiring some rpoducts
+    - need to acquire several of ur article
+    - what do i nede to do to shop an item
+    - help me to acquire an item
+    - help me to buy some products
+    - assistance ordering a few of your product
+    - I want assistance doing a purchase
+    - I need to earn several bloody items, how could I do it?
+    - can ya help me purchase some of ur item
+    - assistance buying some of your article
+    - help to earn a few of ur article
+    - how to shop some items?
+    - i have got to buy a product can i get some help
+    - I do not know what I need to do to purchase some products
+    - help me order some of your product
+    - want assistance to order something
+    - i dont know how i can shop several of ur article
+    - can ya help me to purchase a few of ur article
+    - i do not know what i need to do to earn some of ur article
+    - I have got to purchase several articles
+    - is it possible to shop an item
+    - I want to acquire a product
+    - I do not know how I can acquire some articles
+    - I need help shopping several of your artiicle
+    - where do I order some items?
+    - aswistance buying a few of ur product
+    - I want assistance to acquire some artiicles
+    - I want assistance to earn several products
+    - assistanceto buy several items
+    - I don't know how to buy some articles
+    - whereto acquire something
+    - i dont know what i need to do to buy some products
+    - make order
+    - I do not know how to shop several products
+    - is it possible to buy several of your item?
+    - want help to purchase some of your product
+    - i ahve to acquire some products
+    - i do not know how to acquire several of ur product
+    - I do not know what I need to do to buy an product
+    - need assistance ordering some of ur item
+    - is it possible top order several items?
+    - I need help earning a few of your product
+    - assistance ordering some of your article
+    - how do I acquire some of your item?
+    - help me shop an item
+    - what do I need to do to acquire some of your product?
+    - I'd like to acquire some of ur item how do i do it
+    - I want to purchase a few of your item, how do I do it?
+    - where do I acquire some of your article?
+    - help me shop some of your item
+    - I want to order several articles, could you help me?
+    - wanna earn some of ur article
+    - where can I earn several products?
+    - i need help earning several articles
+    - I try to purchase some of  your item
+    - what do i need to do to shop several products
+    - i dont know what i have to do to earn an article
+    - I do not know what to do to acquire a few of your product
+    - I want to acquire several of your article
+    - can you help me shopping an article?
+    - I have got to earn several of your item, can you help me?
+    - can you help me to shop a goddamn item?
+    - i have to shop several of ur article how to do it
+    - I don't know how I can acquire an articoe
+    - I don't know how to buy some of your item
+    - i need assistance to buy a few of ur item
+    - how do I acquire several of your item?
+    - shop several products
+    - I want to order a few of your product, can I get some help?
+    - buy some articles
+    - what do I need to do to buy several goddamn articles?
+    - what do I have to do to shop several of your item?
+    - can you help me earning some items?
+    - I don't know what todo to purchase something
+    - I do not know what I have to do to order some articles
+    - I want help ordering several articlers
+    - I have to acquire a product
+    - I need help to earn several producst
+    - how do I order an article?
+    - i try to order somethnig
+    - want help buying a product
+    - acquire afew of ur item
+    - I need help ordering several of your item
+    - could you help me to buy some products?
+    - help me shop several of your product
+    - I have to buy a product
+    - I want tobuy an article
+    - i have got to buy some prodcuts
+    - I try to acquire an article
+    - i do not know what to do to purchase several products
+    - i dont know what i have to do to shop an article
+    - i do not kno how to buy some of ur item
+    - can you help me to buy a damn article?
+    - assistance earning some of ur article
+    - help to acquire some products
+    - I need help acquiringv several of your item
+    - help earning a few of your article
+    - i have to purchasea damn item how do i do it
+    - what do i need to do  to buy several products
+    - where to acquire a few of ur item
+    - how do I acquire some articles?
+    - help me acquire some of ur item
+    - I want assiostance to acquire an article
+    - I don't know what I need to do to earn aa product
+    - I need assistance ordering an item
+    - earn some of your article
+    - what do i need to do to earn several of urarticle
+    - i dont know how to shop a few of ur product
+    - how can I acquire a product?
+    - can you help me earn an few of your item?
+    - I don't know how I can earn several products
+    - i dont know what i need to do to purchase some products
+    - where to purchase an article?
+    - want assistance to buy some of ur artikcle
+    - how to purchase some articles?
+    - how can I order several goddamn articles?
+    - need to buy some of ur item
+    - I want help to purchase some items
+    - I want assistance purchasing a few of your product
+    - I do not know ohw to acquire an item
+    - want help ordering several of your product
+    - help shopping several articles
+    - I don't know how I could acquire some of your product
+    - how could I order several damn products?
+    - what do I have to do to acquire some articles?
+    - want assistance to make a purchse
+    - I want assistance placing an order
+    - i want help ordering several of ur article
+    - where to earn several of your product?
+    - I need to acqire some of your item, can you help me?
+    - is it possible to acquire several of ur article
+    - assistance buying several of ur item
+    - how to earn some articles
+    - want assistancd purchasing several of ur product
+    - how can i earn several of urarticle
+    - i want assistance to buy an item
+    - want assistance shopping some of your product
+    - how do i shop an item
+    - I need help shopping several of your item
+    - I don't know what I need to do to buy some of your article
+    - I want to purchase several of your article, how do I do it?
+    - I need assistance to purchase a few of your item
+    - what do I have to do to shop several of your product?
+    - help buying some products
+    - I need assistance to purchase some of your article
+    - I need help shoppimg several items
+    - can you help me purchaqse some of your item?
+    - I want to earn a product, how can I do iut?
+    - I need help to acquire a product
+    - assistance to shop some articles
+    - I do not know how I can earn some products
+    - could you help me placing an order?
+    - help me earning a few of your product
+    - I need help to purchase several of your item
+    - how can I earn some articles?
+    - is it possible to acquire some items
+    - I need to order several articles, can you help me?
+    - assistance ordering an item
+    - what do I need to do to acquire an item?
+    - I need help buying some of your article
+    - I do not know what I need to do to buy a few of your item
+    - I want help buying a few of your article
+    - I need to earn an article, help me
+    - I want help to shop several products
+    - need assistnce acquiring an item
+    - I want help to earn some articles
+    - can ya help me order something
+    - I want assistance ordering several of your article
+    - I do not know how to order a product
+    - I need assistance to purchase some of your item
+    - I have to order some of your article, how can I do it?
+    - i do not know what i need to do to order some fo ur article
+    - I have got to purchase an article, how do I do it?
+    - help ascquiring a few of your article
+    - I would like to shop some of your product, how to do it?
+    - i need help to purchase several of ur product
+    - I am trying to earn a product
+    - help me to do a purchase
+    - I have to acquire some of your article, how to do it?
+    - can you help me purchasing something?
+    - I need to earn several articles
+    - I don't know what I have to do to acquire several products
+    - can uhelp me earn several products
+    - need assistance to earn an article
+    - i do not know what to do to acquire some of ur article
+    - needto do a purchase can i get some help
+    - I do not know how to order some products
+    - i want help acquiring a few of ur item
+    - need assistance ordering some goddamn items
+    - is it possible to purchase an article?
+    - I want help earning a product
+    - can you help me to order some articles?
+    - need assistance acquiring some items
+    - could you hlp me shopping some of your article?
+    - I do not know how I can earn an few of your item
+    - what do I need to do to purchase several of your product?
+    - order a few of your article
+    - i dont know how to earn a product
+    - I do not nkow what I have to do to order a few of your item
+    - I am trying to earn several items
+    - where can I make a purchase?
+    - could you help me to acquire something?
+    - order some of your product
+    - what do i have to do to buy some items
+    - I don't know how to acquire several of your article
+    - want assaistance purchasing a few of your article
+    - want help ordering a few ofur article
+    - wanna order a few of ur article
+    - I do not know what to do to purchase some articles
+    - how can i earn an article
+    - I don't know how I can acquire some items
+    - I need assistance acquiring a product
+    - I have got to acquire several of your article
+    - I need help acquiring a few of your article
+    - can you help me order several products?
+    - need help to order several of your article
+    - I have got to order a few of your item, how do I do it?
+    - where coujld I order several of your product?
+    - i do not know whst to do to shop a few of ur item
+    - how can I acquire several of your article?
+    - I watn help purchasing a product
+    - making order
+    - is it possible to make an order
+    - I want help to earn a produxt
+    - I want assistance earning a few of your product
+    - I am trying to order some of your article
+    - assistance shopping several products
+    - I need to shop a few of your product, how can I do it?
+    - wanna shop a few of ur item how do i do it
+    - where could I shop several of your item?
+    - I want help to shop some bloody articles
+    - need help acquiring a few of your article
+    - buy item
+    - where do I acquire some items?
+    - I do not know how to earn a few of your item
+    - acquire several items
+    - help to purchase something
+    - assistance ordering an article
+    - earning product
+    - i dont know what to do to order several  of ur article
+    - want assistance earning a product
+    - is it possible to earn an article?
+    - how can I buy some products?
+    - I need to earn several items, help me
+    - where do I purchase some products?
+    - i do not know what i have to do to purchase some articles
+    - i have to shop several articles
+    - help to purchase some products
+    - would it be possible to shop several articles?
+    - want assistance shopping a product
+    - how to shop several of you article?
+    - I want to shop several articles
+    - help to shop a bloody product
+    - I want help to acquire a few of your product
+    - can you help me to earn several products?
+    - where to acquire several of your item?
+    - neerd help buying some bloody products
+    - i dont know how i can buy an item
+    - where can I acquire some of your item?
+    - I do not know how to buy several articles
+    - how can i buy a few of ur item
+    - I need to purchase a product, how can I do it?
+    - is it possiblr to earn an item
+    - wanna buy several articles
+    - where to earn several of your article?
+    - what do I need to do to shop some of your product?
+    - I need help acquiring several of your article
+    - i have got to buy some items how can i do it
+    - I have to purchase an article, how can I do it?
+    - how to purchase several articles?
+    - I need assistance shopping some of your item
+    - I do not know how I can purchase an article
+    - I have to earn a damn product , how could I do it?
+    - I don't know what to do to earn some of your item
+    - where can I buy a product?
+    - where to shop several products?
+    - help earning some of youe article
+    - where can I order some items?
+    - I need to order something, will you help me?
+    - i dont know how i can shop several of ur product
+    - I'd like to shop some goddamn products can i get some hel
+    - I have to shop a product, help me
+    - I don't know how to earn several products
+    - I need assistance ordering some of your article
+    - need to purchase some of ur product
+    - I'd like to purcjase several of ur item help me
+    - help to purchase a few of your item
+    - I have got to make an order
+    - can you help me ordering several items?
+    - i dont know what i have to do to buy an article
+    - help me acquiring a few of your article
+    - I need assistance to shop a few of your item
+    - I do not know how I can shop several of your article
+    - I want assistance earning several of your item
+    - i want help to buy a damn  article
+    - i dont know what i need to do to buy some articles
+    - need help acquiring a few of ur product
+    - want assistance to shop several of ur article
+    - i have got to acquire a few of u article
+    - what do I need to do to buy several of your article?
+    - is it possible to acquire an article?
+    - I want to order some of your item, I need help
+    - I do not know how to earn a product
+    - i want assistance acquiring a few of ur item
+    - i do not know how to make an order
+    - can you help me to order a few of your item?
+    - I do not know what to do to earn several of yoru item
+    - i do not know what to do to purchase several of ur product
+    - would it be possible to shop several items?
+    - I don't know how to shop some of your item
+    - need help ordering several oof your product
+    - I do not know how to shop a few of your item
+    - help me to buyy something
+    - I have got to acquire some of your article, I need help
+    - I do not know how to acquire several items
+    - can you help me to earn some of your product?
+    - I have got to order some items, can you help me?
+    - I don't know what to do to shop some goddamn items
+    - wheree could i order some of ur article
+    - want help purchasing several producgs
+    - I want help acquiring a product
+    - I need assistance shopping a few of your item
+    - makepurchase
+    - I need to shop several of your article
+    - how can I purchase a few of your product?
+    - is it possible to purchase several articles
+    - I don't knwo how to make an order
+    - what do I have to do to purchase seevral articles?
+    - I don't know how I could shop several articles
+    - wanna acquire an item how to do it
+    - I want help to order several of your item
+    - assistance to shop several articles
+    - want help shopping some items
+    - I want to buy an article
+    - I need help ordering something
+    - need assistance to acquire a product
+    - help ordering several products
+    - want assistance to purchase a few of your product
+    - I need help to shop a product
+    - I do ont know what to do to acquire some items
+    - what do Ihave to do to acquire some of your item?
+    - can you help me order an item?
+    - I have to shop a few of your product, how could I do it?
+    - I want help to earn several of your article
+    - I have to shop an article, I need help
+    - where could I order a product?
+    - what do I have to do to buy several damn articles?
+    - I am trying to purchase a product
+    - want help shopping several items
+    - making purchase
+    - I'm trying ot earn several articles
+    - i try to acquire an article
+    - I would like to earn several products, how could I do it?
+    - I want to shop some items, how to do it?
+    - where to purchase several  articles
+    - I want to order a product, I need help
+    - help shopping several of your product
+    - can ya help me shop several of ur product
+    - I'm trying to order several articles
+    - what do I have to do to purchase some of your article?
+    - I have got to acquire several articles, can I get some help?
+    - where can I acquire some items?
+    - where can I acquire some products?
+    - make purchase
+    - need to acquire some of ur product can i egt some help
+    - where could I acquire something?
+    - I do not know how I could buy an article
+    - I don't know what to do to buy somethinb
+    - I want assistance ordering an article
+    - need assistance shopping some of your product
+    - I am trying to order some of your product
+    - I want to acquire sevearl of your article
+    - could you help me shop a few of your article?
+    - where do I purchase several products?
+    - i do not know how i can shop a few of ur product
+    - I have to earn several products, how can I do it?
+    - need assistance to purchase several of your article
+    - I need to buy an aricle
+    - I need assistance buying a product
+    - I do not know how I can buy several articles
+    - I need assistance to earn an item
+    - I want to acquire a few of your article
+    - I don't know how to shop some items
+    - help me to purchase some of your article
+    - i havd to buy some products
+    - where can I earn some articles?
+    - I have to acquire some of your article
+    - assistance to earn several of your item
+    - I need assistance to shop several of your product
+    - i want assistance to buy a few of ur article
+    - i need assistance ordering some articles
+    - where do I acqurie some of your article?
+    - i have got to order several of ur product
+    - buy artilce
+    - assistance buying several of your product
+    - want help to order a few of your article
+    - earn several of your prodcuct
+    - where can i order a few of ur product
+    - adsistance earning several of your product
+    - i have to acquire some items i need assistance
+    - I don't know what I have to do to shop a few of your item
+    - where do I shop several products?
+    - how can I order some products?
+    - I am trying to acquire several articles
+    - i need help to purchase a few of ur article
+    - I don't know how I could order something
+    - how do I shop a few of your item?
+    - I do not know how to earn several of your item
+    - I would like to shop several of your article, I need help
+    - I need help purchasing an item
+    - need assistance to earn several of u article
+    - I do not know what I need to do to acquire several products
+    - I need assistance to earn na item
+    - can you help me purchase some articles?
+    - i have to acquire some articles
+    - help acquiring some items
+    - eqrn several of your item
+    - want assistance to acquire  an article
+    - I do not know how to order a few of your article
+    - is it possible to earn something?
+    - help ordering an item
+    - where can i shop a few of ur article
+    - I need to purchase some bloody products
+    - purchase several of your product
+    - I do not know how to buy several of your product
+    - help to acquire a few of your item
+    - assistance orderint some articles
+    - need assistance acquiring an item
+    - help to biy some of ur article
+    - I don't know what I have to do to do a pucrhase
+    - I want to earn some of your item, will you help me?
+    - help doing a  purchase
+    - I need help to order some articles
+    - i do not know how i can earn several of ur product
+    - is it possible to shop a few of your item?
+    - need assistance to order several of your product
+    - i do not know what i have to do to earn some of ur article
+    - assistance to earn some of ur prouct
+    - I need assistance earning several of your product
+    - I need help buying several of your article
+    - I have to acquire some items
+    - I have got to earn several items, how can I do it?
+    - I do not know how I can acquire several of yoru article
+    - assistance to shop a few of your item
+    - need help ordering some products
+    - i do not know what to do to earn an item
+    - I have to earn an article, how can I do it?
+    - i want help purchasing several products
+    - how do i purchase an item
+    - I have got to acquire several items, I need help
+    - I need help earning some articles
+    - want assistance to order some of your article
+    - want assistanfe to shop several damn articles
+    - i need help shopping some of ur article
+    - I do not know what I have to do ot buy several items
+    - I want to acquire several of your product
+    - i do not know how i can buy an article
+    - I need assistance to earn several products
+    - acquire several of your item
+    - how do i earn a few of ur product
+    - help me purchase several articles
+    - I need to acquire some items
+    - where to acquire several articles ?
+    - i want help to shop some producgs
+    - I need to purchase some items, can you help me?
+    - I try to order a product
+    - help to purchase some articles
+    - I do not know what I need to do to purchase several items
+    - help me earning several of ur item
+    - I do not know how I can shop a product
+    - assistance ordering several of ur product
+    - I want help to buy several of your article
+    - i want help ordering something
+    - i want help acquiring an article
+    - what do I have to do to earn some items?
+    - i dont know how i can purcase some items
+    - can you help me toorder a few of your product?
+    - I do not know what to do to purchase several articles
+    - help to shop an article
+    - I don't know how to shop an article
+    - I don't know what I need to do to order several itmes
+    - I need assistance shopping an article
+    - where to order several products?
+    - what do I need to do to buy several items?
+    - I want assistance ordering something
+    - where could I buy several articles?
+    - how can I purchase some of your article?
+    - how could i buy esveral products
+    - is it possible to earn several products?
+    - is it possible to purchase some articles?
+    - I want help to earn several of your item
+    - I don't know how I can order some of your product
+    - I don't know what I have to do to shop some itmes
+    - where can I buy some products?
+    - where do I order several articles?
+    - earn several  products
+    - I want to shop a product
+    - assistance purchasing a few of your item
+    - where can I purchase several of your product?
+    - I do not know how I can order several of your article
+    - help to buy a few of ur item
+    - what do i need to do to do a purchase
+    - help to purcase some of your item
+    - need help to order some of your itdm
+    - wanna earn an article i need asisstance
+    - I need assistance to earn some articles
+    - where do i earn several articles
+    - need to earn some of ur product
+    - I don't know what I need  to do to buy some of your product
+    - I try to purchase some items
+    - help me orderng several of ur article
+    - need help oirdering several items
+    - I don't know how I can purchase something
+    - I need help buying some of your product
+    - i need help ordering some of ur article
+    - I want help byying some bloody products
+    - I want assistance acquiring several of your product
+    - i have to purchase some damn products how can i do it
+    - I want help purchasing an item
+    - I do not know how to acquire several of your product
+    - I don't know how to purchase a few of your item
+    - i have to earn several proucts help me
+    - I need to buy some of your product, how could I do it?
+    - need assistance buying some items
+    - i need assistance acquiring several items
+    - I don't know what I need to do to purchase some items
+    - help me purchase some of your product
+    - how could I purchase several products?
+    - assistance to purchase a few of your product
+    - want assistance purchasing an article
+    - can you help me to purchase several articles ?
+    - is it possible to purchase several of your article?
+    - assistance ordering a few ofur article
+    - I need assistance to shop some articles
+    - how do I acquire a few of your item?
+    - how to shop a few of ur article
+    - i try to buy some articles
+    - I want to acquire an item, can I get some help ?
+    - i try ot order a few of ur item
+    - i have got to purchase sone articles
+    - help shopping some of ur article
+    - what do I need to do to earn some items?
+    - i want help to shop a product
+    - I would like to earn several items
+    - how to acquire a product
+    - what do i need to do to earn several of ur item
+    - need assistance to order some itemsx

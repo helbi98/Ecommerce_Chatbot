@@ -1,0 +1,999 @@
+version: '3.1'
+nlu:
+- intent: track_order
+  examples: |
+    - needx help to check the ETA of purchase [20250](Order Number)
+    - ETA of purchase [20242](Order Number)
+    - need to check the eta of order [20250](Order Number)
+    - I cannot see purchase [20247](Order Number) current status
+    - can uhelp me to check the fucking eta of the order [20243](Order Number)
+    - seeing status of purchase [20246](Order Number)
+    - order [20246](Order Number) status
+    - I have to check purchase [20245](Order Number) status, I need help
+    - I need to see purchase [20250](Order Number) current status
+    - I need assistance seeing purchase [20249](Order Number) status
+    - what do i have to do to locate purchase [20243](Order Number)
+    - I am trying to check order [20241](Order Number) currentstatus
+    - i have got to track purchase [20247](Order Number) help me
+    - track order [20248](Order Number)
+    - how can i see the current status of order [20241](Order Number)
+    - need to see the damn eta of the purchase [20247](Order Number) help me
+    - showing me eta of purchase [20246](Order Number)
+    - i cannot see the status of order [20247](Order Number)
+    - order [20242](Order Number) status
+    - purchase [20245](Order Number) status
+    - help me see the ETA  of purchase [20250](Order Number)
+    - wanna see order [20250](Order Number) status acn ya help me
+    - assistance to see the status of order [20248](Order Number)
+    - where do I check the current status of order [20246](Order Number)?
+    - help me to check the eta of the purchase [20241](Order Number)
+    - wanna track purchase [20245](Order Number)
+    - i want assistance to see the eta of order [20245](Order Number)
+    - help checking the ETA of purchase [20250](Order Number)
+    - help seeing order [20248](Order Number) status
+    - show me estimated time of arrival of order [20248](Order Number)
+    - where is ordered [20242](Order Number)
+    - nee to locate purchase [20246](Order Number) help me
+    - I need assistance seeing purchase [20242](Order Number) bloody status
+    - need help checking the eta of the order [20241](Order Number)
+    - help me to check the ETA of the order [20248](Order Number)
+    - where do I check the status of purchase [20242](Order Number)?
+    - can uhelp me to check the ETA of purchase [20245](Order Number)
+    - showing me estimated time of arrival of purchase [20247](Order Number)
+    - can I check the ETA of order [20249](Order Number)?
+    - i dont know how i can check the ETA of purchase [20246](Order Number)
+    - checking ETA of order [20245](Order Number)
+    - help me see the eta of purchase [20249](Order Number)
+    - I'm tying to see the ETA of purchase [20250](Order Number)
+    - I want help seeing order [20241](Order Number) current status
+    - order [20247](Order Number) status
+    - help to see purchase [20250](Order Number) damn status
+    - need assistance to see the status of purchase [20241](Order Number)
+    - assistance checking the ETA of the purchase [20243](Order Number)
+    - checking order [20248](Order Number) status
+    - want help seeing the eta of  purchase [20242](Order Number)
+    - how do i see purchase  [20246](Order Number) status
+    - i dont know how to check purchase [20241](Order Number) status
+    - I cannot see order [20245](Order Number) status
+    - show me the eta of the order [20249](Order Number)
+    - i need assistancechecking the status of order [20250](Order Number)
+    - i cannot locate order [20246](Order Number)
+    - I want help to see the status of purchase [20241](Order Number)
+    - i acnt see purchase [20245](Order Number) status
+    - I do not know how to check the status of order [20249](Order Number)
+    - how can I see order [20248](Order Number) current status?
+    - what do i have to do to see the status of purchase [20242](Order Number)
+    - checking order status
+    - trackorder [20250](Order Number)
+    - I can't see the ETA of purchase [20241](Order Number)
+    - can i see the eta of the order [20242](Order Number)
+    - showing me purchase [20248](Order Number) status
+    - i want assistance seeing order [20242](Order Number) status
+    - purchase [20246](Order Number) current status
+    - can i see order [20242](Order Number) status
+    - what do I need to do to see order [20248](Order Number) status?
+    - I try to track order [20249](Order Number)
+    - I want help to check order [20245](Order Number) current status
+    - how do I track purchase [20248](Order Number)?
+    - I have got to see the ETA of purchase [20245](Order Number)
+    - will ushow me purchase [20249](Order Number) curret status
+    - I would like to check order [20246](Order Number) current status, help me
+    - I want help to see order [20250](Order Number) status
+    - where can i see purchaes [20248](Order Number) status
+    - how can I see purchase [20242](Order Number) current status?
+    - I need to see order [20246](Order Number) bloody status, can you help me?
+    - can ya help me to see the ETA of purchase [20241](Order Number)
+    - i try to chrck the current status of order [20250](Order Number)
+    - I'm trying to check purcahse [20249](Order Number) current status
+    - show me purchase [20246](Order Number) current status
+    - where to see order [20248](Order Number) current status?
+    - help me seeing the ETA of the purchase [20246](Order Number)
+    - what is order [20241](Order Number) crrent status
+    - locate order [20242](Order Number)
+    - i try to track purchase [20241](Order Number)
+    - i have got to see the current status of order [20249](Order Number)
+    - see order [20249](Order Number) status
+    - i need help seeing purchase [20248](Order Number) status
+    - I'd like to track purchase [20249](Order Number) i need assistance
+    - i need assistance to check the eta of the order [20241](Order Number)
+    - help me see the status of purchase [20250](Order Number)
+    - i want help to check order [20245](Order Number) status
+    - where can i see the ETA of purchase [20241](Order Number)
+    - where do I see the ETA of purchase [20250](Order Number)?
+    - check the ETA of purchase [20241](Order Number)
+    - want assistance to check purchase [20249](Order Number) status
+    - order 00123842current status
+    - I can't see order [20245](Order Number) status
+    - how could I check purchase [20247](Order Number) status?
+    - can I check order [20241](Order Number) current status?
+    - I need help seeing purchase [20245](Order Number) status
+    - check order [20243](Order Number) current status
+    - can you help me seeing the ETA of purchase [20250](Order Number)?
+    - i cannot see tge eta of the purchase [20249](Order Number)
+    - check order [20249](Order Number) status
+    - i have to check the ETA or order [20243](Order Number) help me
+    - where do i check the status of purchase [20241](Order Number)
+    - could I see the current status of order [20248](Order Number)?
+    - how could i see the eta of the order [20242](Order Number)
+    - help to locate purchaes [20247](Order Number)
+    - track order
+    - show me order [20250](Order Number) status
+    - help checking the ETA of the purchase [20249](Order Number)
+    - I am trying to check order [20246](Order Number) current status
+    - where is order [20241](Order Number)
+    - assistance seeing the bloody ETA of the purchase [20249](Order Number)
+    - help me see purchase [20245](Order Number) status
+    - assistance to check the eta of order  [20248](Order Number)
+    - where can i check the bloody eta of order [20243](Order Number)
+    - I don't know how I could see purchase [20248](Order Number) status
+    - assistance seeing the current status of purchase [20242](Order Number)
+    - what is order [20249](Order Number) status
+    - i try to see the eta of order [20246](Order Number)
+    - tracking order
+    - I awnt assistance to locate order [20250](Order Number)
+    - track purchase [20249](Order Number)
+    - how can i tfack purchase [20246](Order Number)
+    - I'm trying to see the eta of purchase [20242](Order Number)
+    - i do not know how i cancheck the eta of purchase [20241](Order Number)
+    - want help to check the eta of purchase [20249](Order Number)
+    - how to see the status of order [20246](Order Number)
+    - i need help seeing the status of purchase [20248](Order Number)
+    - checking order [20247](Order Number) stagus
+    - wana check the ETA of order [20248](Order Number) will ya help me
+    - were could i locate purchase [20242](Order Number)
+    - assistance seeing the ETA of order [20241](Order Number)
+    - wanna locate order [20245](Order Number) how can i do it
+    - help me see the eta of purchase [20246](Order Number)
+    - check current status of purchase [20246](Order Number)
+    - order [20248](Order Number) current status
+    - where do i see the status of order [20248](Order Number)
+    - help me to check the current status of order [20248](Order Number)
+    - need assistance to check the status of order [20249](Order Number)
+    - wanna see orer [20243](Order Number) current status can ya help me
+    - i try to check the ETA of the order [20242](Order Number)
+    - check status of order [20246](Order Number)
+    - purchase [20247](Order Number) ststus
+    - see purchase [20243](Order Number) current status
+    - i do not know how i can see order [20247](Order Number) current satus
+    - I can't check the ETA of the purchase [20245](Order Number)
+    - is it possible to see purchase [20241](Order Number) status?
+    - I want to locate order [20250](Order Number), can I get some help?
+    - help me see the status of purchase [20249](Order Number)
+    - how to see the current status of order [20246](Order Number)?
+    - showing me estimated time of arrival of order [20243](Order Number)
+    - where do I track purchase [20243](Order Number)?
+    - order [20248](Order Number) status
+    - I want help to locate order [20247](Order Number)
+    - see the eta of the purchase [20243](Order Number)
+    - can you help me track order [20249](Order Number)?
+    - I have to check purchase [20242](Order Number) current status
+    - need heop seeing the ETA of the purchase [20248](Order Number)
+    - I can't check purchase [20242](Order Number) status
+    - need to track purchase [20250](Order Number)
+    - I have to check the ETA of the purchase [20249](Order Number)
+    - I want help checking purchase [20249](Order Number) status
+    - I want assistance locating purchase [20245](Order Number)
+    - need assistance to check the ETA of order [20247](Order Number)
+    - how can I check purchase [20250](Order Number) current status?
+    - what do I need to do to track order [20250](Order Number)?
+    - see order [20247](Order Number) fucking current status
+    - purchase [20243](Order Number) status
+    - wanna chedk order [20241](Order Number) status help me
+    - i want help to track purchase00123842
+    - status of order [20243](Order Number)
+    - status of order [20248](Order Number)
+    - need help to check order [20241](Order Number) status
+    - want assistance seeing the status of order [20242](Order Number)
+    - I do not know what to do to see the status of ordrr [20249](Order Number)
+    - what is purchase [20246](Order Number) current status?
+    - checking status of order [20250](Order Number)
+    - icant track order [20247](Order Number)
+    - help me seeing purchase [20250](Order Number) status
+    - assistance to see the ETA of the order [20242](Order Number)
+    - help locating purchase [20245](Order Number)
+    - I want help to check the ETA of order [20248](Order Number)
+    - check purchase [20248](Order Number) current status
+    - I need help seeing the ETA of the order [20248](Order Number)
+    - assistance to check order [20247](Order Number) current status
+    - check order [20248](Order Number) current status
+    - assistance to see the ETA of purchase [20250](Order Number)
+    - I want help to see the ETA of the purchase [20243](Order Number)
+    - wanna check order [20243](Order Number) status
+    - how do I see the goddamn ETA of order [20246](Order Number)?
+    - wanna check the status of purchase [20241](Order Number) how to do it
+    - check order [20245](Order Number) status
+    - I have got to track purchase [20242](Order Number)
+    - what do i have to od to check order [20247](Order Number) status
+    - can I see order [20242](Order Number) current status?
+    - wanna check purchase [20241](Order Number) status
+    - checking ETA of order [20241](Order Number)
+    - I'd like to see order [20249](Order Number) current status will  uhelp me
+    - i have got to locate order [20248](Order Number)
+    - seeing order [20249](Order Number) current status
+    - can ushow me the status of purchase [20246](Order Number)
+    - purchase [20247](Order Number) status
+    - need to see the ETA of purchase [20242](Order Number) how to do it
+    - tracking order [20248](Order Number)
+    - I want to see the ETA of my order, could you help me?
+    - I cannot see the current status of order [20250](Order Number)
+    - can uhelp me to locate order [20249](Order Number)
+    - how could I see order [20245](Order Number) status?
+    - see order [20250](Order Number) current status
+    - I want to see order [20248](Order Number) status, I need help
+    - I need to locate purchase [20249](Order Number), how do I do it?
+    - locate order [20245](Order Number)
+    - help me checking the ETA of purchase [20248](Order Number)
+    - I would like to locate order [20241](Order Number), I need help
+    - can you help me to check order [20247](Order Number) status?
+    - need assistance to see the eta of purchase [20241](Order Number)
+    - I have got to see the ETA of purchase [20242](Order Number)
+    - i cant see the current status of order [20242](Order Number)
+    - track order [20250](Order Number)
+    - help to check the ETA of purchase [20243](Order Number)
+    - checking purchase [20248](Order Number) current status
+    - want help seeing purchase [20245](Order Number) status
+    - see ETA of order [20250](Order Number)
+    - can i check purchase [20243](Order Number) status
+    - I want assistance to check the ETA of purchase [20247](Order Number)
+    - can I see the ETA of the purchase [20247](Order Number)?
+    - I need help to locate order [20250](Order Number)
+    - check the current status of purchase [20249](Order Number)
+    - checking purchase [20249](Order Number) status
+    - when will purchase [20241](Order Number) arrive
+    - help seeing the ETA of the purchase00123842
+    - i dont know how i can check the eta of my last delivery
+    - I  can't check the current status of purchase [20241](Order Number)
+    - can you help me checking the ETA of the order [20247](Order Number) ?
+    - order [20243](Order Number) current status
+    - checking current status of purchase [20241](Order Number)
+    - need assistance to see the eta of purcase [20249](Order Number)
+    - see order [20242](Order Number) current status
+    - purchase [20248](Order Number) ststus
+    - need  to check the eta of the purchase [20250](Order Number) help me
+    - is it possible to see purchase [20247](Order Number) status?
+    - wanna see purchase [20250](Order Number) status i need assistance
+    - I do not know how to check order [20248](Order Number) status
+    - where do i check the status of order [20242](Order Number)
+    - can you help me tracking order [20243](Order Number)?
+    - where to see the ETA of the purchase [20250](Order Number)?
+    - show me purchase [20246](Order Number) statud
+    - see ETA of order [20245](Order Number)
+    - where do i track order [20248](Order Number)
+    - locating order [20248](Order Number)
+    - I want assistance to see the ETA of the order [20246](Order Number)
+    - help to see the ETA of the order [20249](Order Number)
+    - help me check the eta of purchase [20242](Order Number)
+    - i cant see the current status of purchase [20248](Order Number)
+    - how to see order [20247](Order Number) current status?
+    - i cant see order [20243](Order Number) goddamn current satus
+    - show me ETA of purchase [20242](Order Number)
+    - I try to see purchase 00004587345current status
+    - assistance to see order [20250](Order Number) current status
+    - help me  see the eta of the purchase [20248](Order Number)
+    - i have got to locate order [20243](Order Number) how can i do it
+    - assistance checking purchase [20245](Order Number) bloody current status
+    - needto locate order [20247](Order Number) how can i do it
+    - where do i see the status of purchase [20249](Order Number)
+    - need assistance checking order [20245](Order Number) status
+    - see purchase [20249](Order Number) status
+    - check ETA of order [20249](Order Number)
+    - where do I see the ETA of purchase [20245](Order Number)?
+    - is it possible to see the eta of order [20246](Order Number)
+    - wann locate order [20243](Order Number)
+    - can you help me to check purchase [20245](Order Number) status?
+    - track purchase [20246](Order Number)
+    - I want help to see the ETA of order [20250](Order Number)
+    - can I see order [20242](Order Number) status?
+    - showing me order [20249](Order Number) status
+    - I want to see the fucking ETA of the order [20246](Order Number)
+    - I need to track purchase [20249](Order Number), can I get some help ?
+    - need help to check order [20248](Order Number) current status
+    - where do I see the ETA of the order [20249](Order Number)?
+    - I do not know how I can see the status of order [20243](Order Number)
+    - check ETA of order [20249](Order Number)
+    - can I check purchase [20241](Order Number) status?
+    - will ya shwo me the eta of order [20243](Order Number)
+    - where to see the current status of order [20250](Order Number)?
+    - I want to see the status of order [20243](Order Number)
+    - i do not know how i can check the eta of order [20245](Order Number)
+    - what is order [20247](Order Number) status
+    - check purchase [20248](Order Number) current status
+    - I want help checking order [20243](Order Number) current status
+    - order [20241](Order Number) current status
+    - how to check the ETA of the order [20245](Order Number)
+    - eta of order [20241](Order Number)
+    - can you help me to locate order [20245](Order Number)?
+    - is it possible to check order [20250](Order Number) current status?
+    - i have to see the status of order [20243](Order Number) help me
+    - how to locate order [20242](Order Number)?
+    - need help checking the ETA of the purchase [20241](Order Number)
+    - can i see tye eta of purchase [20250](Order Number)
+    - can uhelp me locating order [20242](Order Number)
+    - help me checking the status of purchase [20243](Order Number)
+    - help seeing order [20246](Order Number) status
+    - help me see the status of order [20247](Order Number)
+    - see purchase [20243](Order Number) current status
+    - ETA of oorder [20247](Order Number)
+    - can uhelp me see the goddamn ETA of order [20242](Order Number)
+    - i need assistance to see the ETA of orderr [20245](Order Number)
+    - wanna check the status of order [20249](Order Number)
+    - want assistance to check the status of purchase [20243](Order Number)
+    - can i see the status of purchase [20246](Order Number)
+    - seeing purchase [20247](Order Number) current status
+    - check status of order
+    - I have to see the ETA of order [20245](Order Number), how to do it?
+    - showing me current status of purchase [20243](Order Number)
+    - wanna chec order [20241](Order Number) status
+    - I need help locatin purchase [20248](Order Number)
+    - i have got to locate purchase [20247](Order Number) help me
+    - i need help checking the ET of the purchase [20245](Order Number)
+    - ned to locate order [20246](Order Number) how could i do it
+    - check status of order [20246](Order Number)
+    - need assistance seeing order [20243](Order Number) current status
+    - assistance checking the status of order [20245](Order Number)
+    - help me see the status of purchase [20241](Order Number)
+    - order [20250](Order Number) status
+    - wanna track purchase [20242](Order Number) will ya help me
+    - I need help to check purchase [20241](Order Number) current status
+    - I do not know how to see the ETA of purchase [20242](Order Number)
+    - I have to locate order [20246](Order Number), could I get some help?
+    - need to check the etga of order [20246](Order Number) help me
+    - help me seeing the ETA of order [20246](Order Number)
+    - I have to see order [20243](Order Number) current status, help me
+    - trackorder [20242](Order Number)
+    - I try to check the ETA of the purchase [20250](Order Number)
+    - I try to see purchase 732201349959current status
+    - I want to check order [20245](Order Number) current status, help me
+    - I can't see the status of order [20242](Order Number)
+    - can you help me check the ETA of the purchase [20250](Order Number)?
+    - how to check order [20242](Order Number) current status?
+    - i need assistance to locate purchase [20247](Order Number)
+    - i want help to check the current status of order [20250](Order Number)
+    - i dont know how i could check purchase [20250](Order Number) status
+    - I can't see order [20243](Order Number) status
+    - I do not know how I could see order [20243](Order Number) status
+    - can you help me to see the damn ETA of order [20250](Order Number)?
+    - locate order [20246](Order Number)
+    - how to see purchase [20250](Order Number) current status?
+    - how cam i track order [20247](Order Number)
+    - is it possible to check the ETA of order [20248](Order Number)?
+    - show me order [20243](Order Number) current status
+    - check status of order [20245](Order Number)
+    - help checking the status of purchase [20246](Order Number)
+    - I need help seeing purchase [20247](Order Number) current status
+    - I try to see purchase [20245](Order Number) current status
+    - i dont know how to see the eta of order [20250](Order Number)
+    - I don't know what to do to locate order [20248](Order Number)
+    - help to see the ETA of the ortder [20245](Order Number)
+    - how do i check purchasae [20245](Order Number) current status
+    - order 00004587345current status
+    - where can I see the fucking status of order [20245](Order Number)?
+    - could i see the ETA of the purchase [20245](Order Number)
+    - what is order [20241](Order Number) crrent status
+    - status of order [20242](Order Number)
+    - what is order [20247](Order Number) status?
+    - I don't know what to do to seeorder [20250](Order Number) status
+    - i want assistance seeingorder [20243](Order Number) current status
+    - what do i need to do to see order [20248](Order Number) status
+    - can you help me seeing the status of order [20247](Order Number)?
+    - is it possible to check the statsu of order [20250](Order Number)?
+    - checking status of order [20246](Order Number)
+    - want asistance checking the eta of the order [20246](Order Number)
+    - where can i see the damn eta of the purchase [20247](Order Number)
+    - I have to see purchase [20245](Order Number) current status
+    - assistance seeing the ETA of order [20250](Order Number)
+    - I do not know how to see the status of order [20250](Order Number)
+    - I'm trying to see the current status of order [20243](Order Number)
+    - purchase [20250](Order Number) status
+    - can I check purchase [20242](Order Number) current status?
+    - show me ETA of purchase [20242](Order Number)
+    - I don't know how I can see the ETA of purchase [20247](Order Number)
+    - how can I check the status of purchase [20241](Order Number)?
+    - want assistance seeing the fucking ETA of order [20242](Order Number)
+    - track order [20245](Order Number)
+    - tracking order [20241](Order Number)
+    - check purchase [20248](Order Number) current status
+    - what do I need to do to locate purchase [20250](Order Number)?
+    - can you help me seeing the status of order [20247](Order Number)?
+    - i need assistance to check the eta of the order [20249](Order Number)
+    - see order [20247](Order Number) current status
+    - how to check the current status of order [20245](Order Number)?
+    - I want help to see the fucking ETA of the order [20241](Order Number)
+    - where is order [20245](Order Number)
+    - where to check the current status of order [20247](Order Number)
+    - when will I receive ordered [20248](Order Number)?
+    - wanna check purchase [20241](Order Number) status
+    - how to see the current status of order [20248](Order Number)?
+    - need assiwtance seeing the ETA of the order [20243](Order Number)
+    - I can't check the current status of purchase [20250](Order Number)
+    - where do I check my last purchase estimated time of arrival?
+    - i dont know how to check the ETA of purchase [20243](Order Number)
+    - i want assistance to see the eta of the ordder [20248](Order Number)
+    - could you help me see the status of order [20242](Order Number)?
+    - locating purchase [20242](Order Number)
+    - help me to see the ETA of order [20242](Order Number)
+    - where can i see the current status of purchase [20250](Order Number)
+    - i cannot see the eta of the order [20250](Order Number)
+    - I have to check purchase [20243](Order Number) status, I need assistance
+    - want assistance to see order [20243](Order Number) syatus
+    - i have to see the status of order [20241](Order Number) can ya helo me
+    - need assistance to track order [20246](Order Number)
+    - can ya show me the status of order [20246](Order Number)
+    - see current status of order [20248](Order Number)
+    - I do not know how I can see purchase [20241](Order Number) status
+    - how could I check the current status of order [20246](Order Number)?
+    - need assistance locating purchase [20250](Order Number)
+    - can ya help me to see the ETA of order [20241](Order Number)
+    - i do not know how i can see the ETA of purcyase [20248](Order Number)
+    - i cannot see the current staus of purchase [20245](Order Number)
+    - need help seeing the fucking status of order [20250](Order Number)
+    - check the current status of purchase [20243](Order Number)
+    - where do i see the ETA of the roder [20248](Order Number)
+    - lcate order [20247](Order Number)
+    - I need assistance to check order [20242](Order Number) current status
+    - help to see thje ETA of purchase [20250](Order Number)
+    - i need help checking the status or purchase [20247](Order Number)
+    - i dont know how to check ther status of purchase [20250](Order Number)
+    - checking status of order
+    - see purchase [20246](Order Number) goddamn status
+    - eta of order [20246](Order Number)
+    - I try to see the current status of purchase [20243](Order Number)
+    - need help to see the ETA of the order [20242](Order Number)
+    - I have to check the status of purchase [20246](Order Number)
+    - order [20245](Order Number) current status
+    - I have to see the ETA of the purchase [20249](Order Number)
+    - order  [20248](Order Number) status
+    - ETA of order [20242](Order Number)
+    - I can't check the ETA of the orfer [20243](Order Number)
+    - order [20250](Order Number) current status
+    - want help to seethe eta of purchase [20250](Order Number)
+    - assistance to see the ETA of the order [20247](Order Number)
+    - I cannot see the current status of purchase [20249](Order Number)
+    - i wqant assistance checking purchase [20245](Order Number) status
+    - help to check purchase [20245](Order Number) current status
+    - I want to track purchase [20245](Order Number), I need help
+    - I have got to locate order [20247](Order Number), can I get some help?
+    - I need help to see the current status of order [20243](Order Number)
+    - can ya show me the eta of order [20248](Order Number)
+    - check ETA of order [20248](Order Number)
+    - i cant see the eta of purchase [20246](Order Number)
+    - purchase [20241](Order Number) status
+    - how to see order [20242](Order Number) status
+    - want help to see the eta of purchase [20246](Order Number)
+    - i want asistance to check the damn ETA of order [20249](Order Number)
+    - i hasve to see the ETA of order [20247](Order Number) how can i do it
+    - i have to see the ETA of purchase [20250](Order Number) cn uhelp me
+    - i need assistance seeing the eta of purchase [20250](Order Number)
+    - I want to see the ETA of order [20247](Order Number), I need help
+    - help me to see the ETA of the purchase [20243](Order Number)
+    - showing me order [20245](Order Number) current status
+    - want assistance checking the eta of order [20248](Order Number)
+    - can ya help me check order [20241](Order Number) current status
+    - I need help to check the current status of order [20249](Order Number)
+    - I want to locate purchase [20241](Order Number), help me
+    - see order [20249](Order Number) cuurrent status
+    - how can i see the ETA of the purchase [20246](Order Number)
+    - how can I see order [20245](Order Number) current status?
+    - wat help to see the ETA of purchase [20248](Order Number)
+    - i dont know wha to do to check the status of order [20250](Order Number)
+    - I do not know how to track order [20249](Order Number)
+    - where could i see the eta of order [20248](Order Number)
+    - can uhelp me to check the ETA of purchase [20245](Order Number)
+    - need to check order [20250](Order Number) current status how do i do it
+    - i want help to check the ETA of the oder [20243](Order Number)
+    - wanna see hte eta of order [20247](Order Number) help me
+    - I need help to see the ETA of the purchase [20243](Order Number)
+    - where can i check purchase [20243](Order Number) status
+    - I'd like  to check order [20242](Order Number) fucking status
+    - help to see the current status of purchase [20247](Order Number)
+    - checking purchase [20250](Order Number) status
+    - order  [20243](Order Number) status
+    - help me to check the current status of order [20242](Order Number)
+    - checking order [20248](Order Number) current status
+    - can i check order [20245](Order Number) current status
+    - show me the eta of the order [20243](Order Number)
+    - checking ETA of order [20245](Order Number)
+    - checking order [20247](Order Number) current status
+    - I want help seeing purchase [20246](Order Number) status
+    - assistance checking the ETA of the purchase [20246](Order Number)
+    - I don't know how I can check the ETA of order [20243](Order Number)
+    - can ya help me tracking order [20250](Order Number)
+    - I want to check the ETA of purchase [20246](Order Number)
+    - help me see the ETA of the order [20249](Order Number)
+    - I try to see the ETA of purchase [20243](Order Number)
+    - I have got to see purchase [20248](Order Number) current status
+    - need assistance to check the ETA of purchase [20241](Order Number)
+    - is it possible to check the ETA oif order [20248](Order Number)
+    - see order [20241](Order Number) status
+    - ihave to locate purchase [20245](Order Number) help me
+    - how can I check the ETA of the purchase [20248](Order Number)?
+    - check order [20247](Order Number) status
+    - help checking the eta of purchase [20241](Order Number)
+    - how to see order [20247](Order Number) fucking current status?
+    - can you show me the ETA of purchase [20242](Order Number)?
+    - help me check the eta of the order [20243](Order Number)
+    - help to see the ETA of purchase [20242](Order Number)
+    - I want to see the ETA of the purchase [20243](Order Number), I need help
+    - I have got to check order [20245](Order Number) status, can you help me?
+    - I need to see the ETA of the purchase [20248](Order Number), help me
+    - i want help seeing purchase [20250](Order Number) current status
+    - I'd like to locate purchase [20247](Order Number) i need assistance
+    - i want assistance to track purchase [20243](Order Number)
+    - help to check the ETA of purchase [20246](Order Number)
+    - how do i see the damn status of order [20246](Order Number)
+    - I need help locatin purchase [20242](Order Number)
+    - i have to see the status of purchase [20250](Order Number) how do i do it
+    - track purchase [20245](Order Number)
+    - see purchase [20248](Order Number) status
+    - can I see order [20247](Order Number) status?
+    - i cannot track purchase [20242](Order Number)
+    - checking status of order [20242](Order Number)
+    - order  [20248](Order Number) status
+    - where to check the ETA of purchase [20248](Order Number)
+    - check ETA of order [20241](Order Number)
+    - can you help me see purchase [20246](Order Number) status?
+    - how do I see the ETA of the order [20243](Order Number)?
+    - checking order [20250](Order Number) status
+    - I have got to see the ETA of order [20249](Order Number), I need help
+    - i want help seeing theeta of purchase [20246](Order Number)
+    - where to see purchase [20249](Order Number) status?
+    - can you help me see the ETA of the order [20247](Order Number)?
+    - check the eta of the order [20241](Order Number)
+    - need help seeing purchase [20245](Order Number) current status
+    - can you help me track order [20247](Order Number)?
+    - i want help seeing the current status of purchase [20248](Order Number)
+    - I have to see the status of purchase [20242](Order Number)
+    - how can i tfack purchase [20246](Order Number)
+    - i have got to see order [20249](Order Number) status i need assistane
+    - assistance to check the ETA of the purchase [20245](Order Number)
+    - need assistance checking order [20246](Order Number) current status
+    - wanna locate purchase [20247](Order Number) how could i do it
+    - I'd liketo see the ETA of the purchase [20245](Order Number) help me
+    - want help to see the status of purchase [20248](Order Number)
+    - can ushow me order [20243](Order Number) status
+    - I want help locating order [20242](Order Number)
+    - track purchase [20247](Order Number)
+    - check estimated time of arrival of order [20245](Order Number)
+    - I have to see the bloody ETA of order [20241](Order Number), I need help
+    - i need help to see purchase [20249](Order Number) status
+    - is it possible to see purchase [20241](Order Number) status?
+    - purchase [20246](Order Number) current  status
+    - I do not know how I could see order [20249](Order Number) status
+    - i dont know how i can see the eta of the order [20243](Order Number)
+    - could you help me see purchase [20250](Order Number) current status?
+    - how to see the ETA of order [20242](Order Number)?
+    - I cannot check the ETA of the order [20247](Order Number)
+    - see order [20242](Order Number) stats
+    - I would like to locate order [20241](Order Number), I need help
+    - chcek order [20250](Order Number) current status
+    - how to see the status of order [20241](Order Number)?
+    - assistance to check the eta of the purchase [20248](Order Number)
+    - locate purchase [20249](Order Number)
+    - see purchase [20245](Order Number) current status
+    - ETA of order [20241](Order Number)
+    - i need assistance to check the status of order [20245](Order Number)
+    - I am trying to see the status of purchase [20245](Order Number)
+    - checking ETA of order [20243](Order Number)
+    - I want help to see the ETA of purchase [20247](Order Number)
+    - how could i check the ETA of the order [20249](Order Number)
+    - I don't know how to locate order [20246](Order Number)
+    - wanna check the status of order [20242](Order Number) how to dl it
+    - need help seeing purchase [20249](Order Number) status
+    - where can i see the current status of order [20242](Order Number)
+    - seeing order [20249](Order Number) status
+    - is it possible to track purchase [20245](Order Number)?
+    - order  [20242](Order Number) status
+    - show me order [20245](Order Number) current status
+    - locate purchase [20245](Order Number)
+    - show me the fucking current status of order [20249](Order Number)
+    - track order [20248](Order Number)
+    - see current status of order [20241](Order Number)
+    - checking status of order [20242](Order Number)
+    - I try to see the ETA of order [20247](Order Number)
+    - i want help seeing purchase [20246](Order Number) curtent status
+    - icant see the eta of purchase [20247](Order Number)
+    - need help checking the damn ETA of purchase [20243](Order Number)
+    - can uhelp me checking the eta of order [20248](Order Number)
+    - where do I check the ETA of the purchase [20241](Order Number)?
+    - help to seee the eta of purchase [20246](Order Number)
+    - want help seeing the ETA of the purchase [20242](Order Number)
+    - purchase [20248](Order Number) current status
+    - help seeing the ETA of order [20243](Order Number)
+    - help to see order [20242](Order Number) current status
+    - need help seeing the eta of the purchase [20246](Order Number)
+    - I can't see the damn status of order [20242](Order Number)
+    - i cant see the status of order [20248](Order Number)
+    - how do i see the eta of order [20249](Order Number)
+    - I want to check the ETA of the purchase [20242](Order Number)
+    - check order status
+    - I want help seeing the status of order [20248](Order Number)
+    - need assistance to check the ETA of purchase [20247](Order Number)
+    - I want to see the ETA of order [20245](Order Number), how do I do it?
+    - I don't know how I can check the ETA of order732201349959
+    - hwere to see the ETA of the order [20241](Order Number)
+    - help me see the status of purchase [20245](Order Number)
+    - check the ETA of purchase [20247](Order Number)
+    - see purchase [20241](Order Number) current status
+    - i need assistance to check purchase [20247](Order Number) status
+    - i need help seeing the goddamn eta of purchae [20241](Order Number)
+    - how do i check order [20250](Order Number) current status
+    - i cfannot see order [20249](Order Number) current status
+    - I donot know how to check order [20243](Order Number) status
+    - how to track order [20242](Order Number)?
+    - check current status of purchase [20245](Order Number)
+    - wanna see pjrchase [20245](Order Number) damn current status
+    - order 732201349959current status
+    - want assistance checking the ETA of orfer [20245](Order Number)
+    - see ETA ob order [20249](Order Number)
+    - I can't locate purchase [20245](Order Number)
+    - i have got to locte order [20248](Order Number)
+    - purchase [20247](Order Number) current  status
+    - I want to see the status of order [20246](Order Number), I need help
+    - can you help me checking purchase [20250](Order Number) status?
+    - order  [20249](Order Number) status
+    - I need help to track purchase [20248](Order Number)
+    - need help to check  the ETA of the order [20245](Order Number)
+    - where do i check the current status of purchase [20247](Order Number)
+    - status of order [20241](Order Number)
+    - help seeing the ETA of order [20250](Order Number)
+    - I cannot see order [20246](Order Number) damn current status
+    - assistance to see the ETA of the purchase [20248](Order Number)
+    - I cannot see purchase [20249](Order Number) goddamn current status
+    - seeing order [20248](Order Number) current status
+    - where could I see purchase [20248](Order Number) status?
+    - want help to see tthe damn ETA of order [20250](Order Number)
+    - I want assistance to see the ETA of the order [20249](Order Number)
+    - need help to check the ETA of the order [20247](Order Number)
+    - can you show me the current status of order [20250](Order Number)?
+    - can I see the current status of purchase [20248](Order Number)?
+    - checking order [20250](Order Number) status
+    - where do I check the ETA of purchase [20245](Order Number)?
+    - checking order [20249](Order Number) status
+    - I am trying to see the status of order [20247](Order Number)
+    - help me to see the status of order [20242](Order Number)
+    - check purchase [20245](Order Number) status
+    - I try to check order [20245](Order Number) current status
+    - check purchase [20250](Order Number) statsu
+    - I have to see purchase [20250](Order Number) status, how can I do it?
+    - I want to track purchase [20248](Order Number), how could I do it?
+    - where can I check order [20243](Order Number) status?
+    - where is purechase [20245](Order Number)
+    - show me order [20248](Order Number) current status
+    - how can i see order [20247](Order Number) status
+    - help to see the eta of purchase [20241](Order Number)
+    - I do not know how I could check the ETA of purchase [20245](Order Number)
+    - i want help checking purchase [20242](Order Number) status
+    - I can't check the status of purchase [20250](Order Number)
+    - I have to check the goddamn current status of order [20245](Order Number)
+    - i want help checking order [20245](Order Number) current status
+    - showing me order [20249](Order Number) current status
+    - I don't know how to track purchase [20250](Order Number)
+    - what do I have to do to see the status of purchase [20243](Order Number)?
+    - I want assistance checking the ETA of purchase [20243](Order Number)
+    - I'm trying to check the eta of purchase [20246](Order Number)
+    - check purchase [20250](Order Number) goddamn status
+    - where can i track order [20242](Order Number)
+    - can you show me the status of order [20241](Order Number)?
+    - is it possible to check the eta of order [20247](Order Number)
+    - wanna see purchase [20247](Order Number) current status
+    - I do not know what to do to locate order [20249](Order Number)
+    - I want assistance checking the ETA of purchase [20247](Order Number)
+    - I have to see the ETA of the order [20249](Order Number), help me
+    - how to check the  status of order [20243](Order Number)?
+    - ETA of order [20248](Order Number)
+    - need to see purchase [20241](Order Number) status
+    - checking order [20246](Order Number) status
+    - locating order [20247](Order Number)
+    - I need help to see the ETA of purchase [20250](Order Number)
+    - I try to see the ETA of the purchase [20241](Order Number)
+    - how can i check purchase [20241](Order Number) current status
+    - when will I receive ordered [20243](Order Number) ?
+    - where to see the ETA of order [20247](Order Number)?
+    - how can i check the status of purchase [20247](Order Number)
+    - help checkinjg the eta of order [20245](Order Number)
+    - I need assistance locating order [20246](Order Number)
+    - can you help me locating order [20248](Order Number)?
+    - i dont know how to check the eta of purchase [20243](Order Number)
+    - I am trying to locate order [20246](Order Number)
+    - I would like to locate purchase [20241](Order Number)
+    - i want assistance to see the status of purchase [20243](Order Number)
+    - want hewlp locating order [20243](Order Number)
+    - can uhelp me see the currnt status of order [20248](Order Number)
+    - help me to check the ETA of the order [20250](Order Number)
+    - can I track order [20242](Order Number)?
+    - I'm trying to see purchase [20243](Order Number) current status
+    - I need assistance to locate order [20250](Order Number)
+    - I don't know how I can locate purchase [20248](Order Number)
+    - wanna locate uprchase [20245](Order Number) can i get some help
+    - I nerd to check the ETA of the purchase [20243](Order Number)
+    - help me checking purchase [20248](Order Number) current status
+    - I would like to locate purchase [20243](Order Number), I need help
+    - I need to track purchase [20245](Order Number), how to do it?
+    - check the ETA of the purchase [20243](Order Number)
+    - is it possible to check order [20249](Order Number) current status?
+    - can ya help me checking the eta of the order [20248](Order Number)
+    - i have to see the damn ETA of my delivery helpme
+    - help me to check order [20248](Order Number) goddamn current status
+    - assistance to see order [20243](Order Number) current status
+    - help seeing purchase [20248](Order Number) current status
+    - I want help tosee the status of order [20243](Order Number)
+    - I try to check purchase [20248](Order Number) current status
+    - I would like to locate order [20246](Order Number), I need help
+    - help me see the ETA of purchase [20246](Order Number)
+    - check order [20249](Order Number) status
+    - help me to see the ETA of the purchase [20245](Order Number)
+    - ETA of ordr [20243](Order Number)
+    - help to see order [20241](Order Number) status
+    - what is order [20241](Order Number) current status?
+    - help me see purchase [20242](Order Number) status
+    - I don't know how to see oder [20241](Order Number) status
+    - what is order [20247](Order Number) status?
+    - ETA of order [20243](Order Number)
+    - i dont know how to check the ETA of purchase [20243](Order Number)
+    - want help to see purchase [20249](Order Number) status
+    - where can i check the ETA of the order [20243](Order Number)
+    - I don't know what I have to do to track order [20245](Order Number)
+    - i need help seeing order [20250](Order Number) current status
+    - assistance checking the status of purchase [20245](Order Number)
+    - how to see order [20241](Order Number) damn status
+    - I need to see purchase [20249](Order Number) status, how to do it?
+    - i want help seeing the goddamn ETA of purchase [20249](Order Number)
+    - I need help tracking purchase [20249](Order Number)
+    - help to check the ETA of order [20241](Order Number)
+    - i dont know what to do to track purchase [20245](Order Number)
+    - I have got to track purchase [20243](Order Number), how can I do it?
+    - I need assistance trackng purchase [20248](Order Number)
+    - see the ETA of purchase [20241](Order Number)
+    - tracking order [20248](Order Number)
+    - i want help checking the ETA of purchase [20242](Order Number)
+    - how to check the ETA of the order [20248](Order Number)?
+    - i have to see the eta of order [20242](Order Number)
+    - check order [20243](Order Number) status
+    - see order [20248](Order Number) status
+    - where to check the current status of order [20243](Order Number)?
+    - I want assistance checking order [20247](Order Number) status
+    - help me checking purchase [20243](Order Number) current status
+    - wanna see the eta of order [20243](Order Number) how can i do it
+    - hlw do i check the ETA of purchase [20243](Order Number)
+    - order 370795561790current status
+    - wanna check the eta of order [20243](Order Number) how to do it
+    - I want help olcating purchase [20245](Order Number)
+    - how do i check the status of purchase [20250](Order Number)
+    - I want to locate order [20245](Order Number), could I get some help?
+    - check status of order [20242](Order Number)
+    - checking current status of order [20248](Order Number)
+    - is it possible to see purchase [20248](Order Number) current status
+    - need to see order [20249](Order Number) current stayus
+    - were to check order [20248](Order Number) current status
+    - i dont know how i can see the ETA of order [20245](Order Number)
+    - need assistance seeing the ETA of order [20243](Order Number)
+    - check my last parcel eta
+    - I have to see order [20246](Order Number) status, I need assistance
+    - track order [20243](Order Number)
+    - what is order [20243](Order Number) status
+    - show me purchase [20247](Order Number) status
+    - where do I check the status of purchase [20245](Order Number)?
+    - can you help me see the current status of order [20242](Order Number)?
+    - track purchase [20250](Order Number)
+    - help me to check the current status of purchase [20246](Order Number)
+    - where to see order [20243](Order Number) status?
+    - check purchase [20246](Order Number) status
+    - i do not know what to do to see the ETA of order [20243](Order Number)
+    - i have to see the ETA of order [20247](Order Number) can ya help me
+    - need help checking the status of purechase [20242](Order Number)
+    - can uhelp me seethe ETA of order [20250](Order Number)
+    - purchase [20243](Order Number) current status
+    - wqhere to see purchase [20247](Order Number) current status
+    - how to check the current status of purchase [20242](Order Number)?
+    - I have to see the ETA of the order [20245](Order Number), help me
+    - i have to check the ETA of order732201349959 i need help
+    - I need to see the current status of order [20241](Order Number)
+    - can ya help me to see the ETA of the purchase [20246](Order Number)
+    - how can I see the status of purchae [20246](Order Number)?
+    - tracking order [20250](Order Number)
+    - assistance to track purchase [20243](Order Number)
+    - I need assistance seeing the ETA of order [20242](Order Number)
+    - what is order [20243](Order Number) current status
+    - I want help to check purchase [20250](Order Number) status
+    - showing me purchase [20250](Order Number) current status
+    - I try to track purchase [20243](Order Number)
+    - chek order [20243](Order Number) status
+    - I am trying to see order [20241](Order Number) status
+    - can you help me see the ETA of the order [20247](Order Number)?
+    - i cant see the ETA of the order [20248](Order Number)
+    - I can't locate order [20246](Order Number)
+    - assistance to see purchase [20245](Order Number) status
+    - wanna see order [20247](Order Number) damn current status help me
+    - I have to check the ETA of the purchase [20246](Order Number)
+    - need help to check the eta  of purchase [20243](Order Number)
+    - can you help me seeing the ETA of the order [20249](Order Number)?
+    - status of order
+    - i cannot see the eta of order [20241](Order Number)
+    - could uhelp me see the eta of purchase [20246](Order Number)
+    - i have to see the goddamn ETA of purchase [20247](Order Number)
+    - how to check purchase [20242](Order Number) status?
+    - i try to check the status of order [20242](Order Number)
+    - where is order [20248](Order Number)?
+    - check order [20246](Order Number) current status
+    - where to check the eta  of the order [20245](Order Number)
+    - is it possible to see thew ETA of the purchase [20245](Order Number)?
+    - help checking the ETA o the purchase [20247](Order Number)
+    - how do I check the current status of order [20245](Order Number)?
+    - what is order [20250](Order Number) current status
+    - i have to check the status of order [20242](Order Number)
+    - checking ETA of order [20250](Order Number)
+    - I need help checking the ETA of order [20248](Order Number)
+    - status of order [20248](Order Number)
+    - see order [20241](Order Number) fucking current status
+    - need assistance to see the ETA of the purchase [20250](Order Number)
+    - I do not know how to see the status of purchase [20250](Order Number)
+    - see status of purchase [20246](Order Number)
+    - how do i check the eta of purchase [20247](Order Number)
+    - want assistance locating purchase [20241](Order Number)
+    - wanna see the statusof order [20246](Order Number) i need help
+    - see order [20248](Order Number) current status
+    - i need assistance checking the ETA of the purchase [20247](Order Number)
+    - assiustance tracking purchase [20248](Order Number)
+    - order 113542617735902current status
+    - assistance to see the ETA of order [20247](Order Number)
+    - check purcase [20245](Order Number) current status
+    - I want help checking purchase [20250](Order Number) current status
+    - how to see order [20250](Order Number) status?
+    - I want to see order [20246](Order Number) status, how do I do it ?
+    - where do i see the eta of the order [20250](Order Number)
+    - where could i check order [20246](Order Number) fucking curent status
+    - where can i see the ETA of the order [20248](Order Number)
+    - how to check the eta of order [20245](Order Number)
+    - wanna check the status of order [20243](Order Number) could uelp me
+    - show me order [20250](Order Number) status
+    - help me tracking order [20248](Order Number)
+    - how do I see order [20249](Order Number) current status?
+    - trackorder [20250](Order Number)
+    - I want to see order [20245](Order Number) bloody current status
+    - tracking order [20245](Order Number)
+    - how can I check the ETA of the purchase [20248](Order Number)?
+    - could ya help me locae purchase [20242](Order Number)
+    - what is order [20242](Order Number) current status?
+    - where could I check purchase [20249](Order Number) current status?
+    - I try to see purchase [20247](Order Number) status
+    - i need assistance to check the status of purchase [20248](Order Number)
+    - how to see order [20250](Order Number) status
+    - checking order [20241](Order Number) current status
+    - i do not kno what to do to locate purchase [20245](Order Number)
+    - check order [20246](Order Number) current  status
+    - i dont know how i can see the ETA of purchase [20243](Order Number)
+    - can you help me see purchase [20242](Order Number) current status?
+    - I have got to locate purchase [20248](Order Number), I need help
+    - I need to see the ETA of order [20242](Order Number)
+    - could uhelp me check the damn eta of order [20243](Order Number)
+    - I need assistance to check order [20250](Order Number) current status
+    - see the ETA of order [20249](Order Number)
+    - assistance to see purchase [20246](Order Number) status
+    - i do not know how to see the eta of the order [20246](Order Number)
+    - how can i see the status of purchase [20245](Order Number)
+    - I want to locate purchase [20248](Order Number)
+    - i want help seeing the ETA of order [20241](Order Number)
+    - how do I check purchase [20243](Order Number) current status?
+    - how to see order [20243](Order Number) current status?
+    - could uhelp me checkingb the eta of the purchase [20247](Order Number)
+    - how do I locate order [20243](Order Number)?
+    - I'm trying to check the status of purchase [20247](Order Number)
+    - I try to seethe status of purchase [20246](Order Number)
+    - wanna check order [20249](Order Number) status can uhelp me
+    - I do not know what to do to locate purchase [20248](Order Number)
+    - i have to see order [20241](Order Number) current status i need help
+    - can i see the ETA of the order [20242](Order Number)
+    - need assistance to check purchase [20243](Order Number) status
+    - need to trafk order [20246](Order Number) help me
+    - I ma trying to see the status of order [20249](Order Number)
+    - see ETA ob order [20245](Order Number)
+    - i have to see the status of order [20248](Order Number)
+    - i have to check the ETA of order [20242](Order Number) ohw do i do it
+    - check current status of order [20250](Order Number)
+    - see order [20241](Order Number) stats
+    - can i check the status of purchase [20242](Order Number)
+    - i have to locate purchase [20248](Order Number) i need assistance
+    - check status of order [20245](Order Number)
+    - i cannot check purchase [20250](Order Number) status
+    - how can i check the eta of the order [20247](Order Number)
+    - what do i have to do to chheck purchase [20241](Order Number) status
+    - wanna locate purchase [20246](Order Number) can i get some help
+    - how do i check the eta of order00123842
+    - i try to track order [20242](Order Number)
+    - where to see the ETA of the order [20249](Order Number)
+    - locate order [20247](Order Number)
+    - help seeing the current status of purchase [20245](Order Number)
+    - I am trying to see the ET of the order [20241](Order Number)
+    - I do not know what I need to do to locate order [20249](Order Number)
+    - I have to see the ETA of the order [20243](Order Number)
+    - I have to see order [20249](Order Number) current status, I need help
+    - order status
+    - how to see purchase [20250](Order Number) current status?
+    - purchase [20243](Order Number) current  status
+    - I have got to locate order [20248](Order Number)
+    - assistance to check the current status of order [20245](Order Number)
+    - need assistance to check the ETA of the order [20250](Order Number)
+    - I have to see the ETA of the order [20246](Order Number), how to do it?
+    - can uhelp me see the ETA of purchase [20248](Order Number)
+    - see purchase [20245](Order Number) status
+    - want assistance to see the status of order [20250](Order Number)
+    - see purchase [20246](Order Number) status
+    - I try to check purcbase [20243](Order Number) status
+    - what do I have to do to locate order [20243](Order Number)?
+    - locating order [20245](Order Number)
+    - i need assistance tracking purchase [20247](Order Number)
+    - where to see the bloody ETA of the order [20246](Order Number)
+    - what is order [20241](Order Number) current status?
+    - purchase [20245](Order Number) current status
+    - where to see order [20249](Order Number) status?
+    - want help to check the fucking TEA of the order [20247](Order Number)
+    - purchase [20248](Order Number) current status
+    - need assistance checking the ETA of the purchase [20241](Order Number)
+    - I need help to check purchase [20250](Order Number) current status
+    - want assistance seeing the ETA of purchase [20246](Order Number)
+    - I am trying to check purchase [20249](Order Number) current status
+    - show me order [20250](Order Number) status
+    - need help seeing purchase [20249](Order Number) current status
+    - show me order [20241](Order Number) current status
+    - check order [20245](Order Number) current status
+    - is it possible to check purchase [20242](Order Number) status?
+    - check ETA of order [20241](Order Number)
+    - seeing purchase [20243](Order Number) current status
+    - I need to check the ETA of the order [20247](Order Number)
+    - I have to check the ETA of the order [20247](Order Number)
+    - I want assistance to check hte ETA of order [20248](Order Number)
+    - seeing order [20247](Order Number) status
+    - I need to check the status of purchase [20246](Order Number)
+    - can you show me the ETA of order [20241](Order Number)?
+    - can uhelp melocate order [20249](Order Number)
+    - help checking the eta of order [20250](Order Number)
+    - i have to check the eta of the purchase [20241](Order Number)
+    - can you help me seeing the ETA of the order [20250](Order Number)?
+    - i want assistance to see the ETA of the order [20242](Order Number)
+    - what do I need to do to see the ETA of purchase [20247](Order Number)?
+    - see order [20245](Order Number) status
+    - I want help checking purchase [20250](Order Number) status
+    - wanna see order [20247](Order Number) status help me
+    - help me checking the current status of purchase [20247](Order Number)
+    - can you help me see purchase [20250](Order Number) current status?
+    - I want assistance checking purchase [20241](Order Number) status
+    - show me purchase [20243](Order Number) current status
+    - checking status of order [20245](Order Number)
+    - help me check the ETA of order [20243](Order Number)
+    - i need assistance checking the status of order [20250](Order Number)
+    - how can i see purchase [20241](Order Number) sttatus
+    - I want to track purchase [20242](Order Number), how could I do it?
+    - where to see the ETA of order [20246](Order Number)
+    - I try to see order [20247](Order Number) status
+    - check order [20246](Order Number) current status
+    - where do i see the eta of the order [20246](Order Number)
+    - I have got to check the status of purchase [20242](Order Number)
+    - see order [20242](Order Number) current status
+    - ETA of purchase [20247](Order Number)
+    - help me see the ETA of the order [20241](Order Number)
+    - can ushow me the ETA of purchase [20248](Order Number)
+    - where is order [20245](Order Number) ?
+    - what is purchase [20248](Order Number) status
+    - see order [20247](Order Number) status
+    - see eta of order [20242](Order Number)
+    - I need to see the ETA of purchase00123842
+    - i want help to see purchase [20241](Order Number) status
+    - i want assistance to track order [20245](Order Number)
+    - I need help seeing the ETA of the purchase [20243](Order Number)
+    - where do I see the status of purchase [20245](Order Number)?
+    - can ya help me to check the ETA of the order [20250](Order Number)
+    - how to check the status of purchase [20243](Order Number)?
+    - help me to check the ETA of order [20246](Order Number)
+    - where do i check the ETA of purchase [20245](Order Number)
+    - help me locating purchase [20248](Order Number)
+    - how do I check order [20242](Order Number) current status?
+    - ETA of order [20242](Order Number)
+    - see the ETA of the purchase [20243](Order Number)
+    - want assistance to check the ETA of purchase [20247](Order Number)
+    - where can I see order [20250](Order Number) status?
+    - need to see the ETA of purchase [20248](Order Number) how to do it
+    - i do notknow what to do to locate order [20245](Order Number)
+    - eta fo order [20247](Order Number)
+    - i try to see the statuis of purchase [20248](Order Number)
+    - need help to see the ETA of the purchase [20246](Order Number)
+    - i need help trackng order [20243](Order Number)
