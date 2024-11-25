@@ -1,38 +1,142 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - Hello
+      - Hi
+      - Hey
+      - Good morning
+      - Good afternoon
+      - Good evening
+      - Hi there
+      - Hello there
+      - Greetings
+      - Howdy
+      - What's up
+      - Yo
+      - Hey, how are you?
+      - Hello, how's it going?
+      - Hi, nice to meet you
+      - Hey, bot!
+      - Hi again
+      - Hello again
+      - Hey! What's new?
+      - Hiya!
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - Goodbye
+      - See you later
+      - Bye
+      - Bye-bye
+      - See ya
+      - Take care
+      - Later
+      - Peace out
+      - Catch you later
+      - Talk to you soon
+      - Farewell
+      - I'm leaving now
+      - Thanks, bye
+      - See you around
+      - Bye for now
+      - Have a good day
+      - Have a good one
+      - I'm off, goodbye
+      - Take it easy
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: inform_item
+    examples: |
+      - I want a [tablet](item_name)
+      - Please order a [laptop](item_name)
+      - I need a [backpack](item_name)
+      - Can you place an order for a [smartphone](item_name)?
+      - One [book](item_name)
+      - I’d like to buy a [smartwatch](item_name)
+      - Get me a [headphone](item_name)
+      - Order a [charger](item_name)
+      - [Laptop](item_name)
+      - [Smartwatch](item_name)
+      - [Smartphone](item_name)
+      - [Headphones](item_name)
+      - A [camera](item_name)
+      - I need a [monitor](item_name)
+      - Order a [keyboard](item_name)
+      - Please get a [mouse](item_name)
+      - Add a [router](item_name) to my order
+      - Can you order a [printer](item_name)?
+      - I’d like to purchase a [power bank](item_name)
+      - Add a [USB drive](item_name)
+      - I need to buy a [tablet stand](item_name)
+      - I want a [phone case](item_name)
+      - Could you order a [smart bulb](item_name)?
+      - Place an order for a [fitness tracker](item_name)
+      - I’d like to buy a [gaming console](item_name)
+      - Get a [VR headset](item_name)
+      - I want to order a [projector](item_name)
+      - Place an order for a [tripod](item_name)
+      - Please order a [smart speaker](item_name)
+      - Get me a [desktop](item_name)
+      - Buy a [coffee maker](item_name)
+      - I need a [water bottle](item_name)
+      - Can you order a [notebook](item_name)?
+      - Add a [drawing tablet](item_name) to my cart
+      - I’d like to get a [gaming mouse](item_name)
+      - Get a [webcam](item_name) for me
+      - Order a [soundbar](item_name)
+      - Please place an order for a [washing machine](item_name)
+      - I want a [fridge](item_name)
+      - Could you order a [dishwasher](item_name)?
+      - Buy me a [microwave](item_name)
+      - I need a [vacuum cleaner](item_name)
+      - One [iron](item_name)
+      - I want to order a [fan](item_name)
+      - Please get a [heater](item_name)
+      - I need to buy a [toaster](item_name)
+      - [Blender](item_name)
+      - A [juicer](item_name)
+      - Order a [water purifier](item_name)
+      - I’d like to get a [sofa](item_name)
+      - Place an order for a [dining table](item_name)
+      - I need a [chair](item_name)
+      - Could you order a [wardrobe](item_name)?
+      - Buy a [bed](item_name) for me
+      - Get a [mattress](item_name)
+      - Order a [shoe rack](item_name)
+      - One [lamp](item_name)
+      - I need to buy a [bookshelf](item_name)
+      - Please order a [rug](item_name)
+      - [Curtains](item_name)
+      - A [mirror](item_name)
+      - Get a [wall clock](item_name)
+      - Order a [painting](item_name)
+      - Add a [photo frame](item_name)
+      - I want a [planter](item_name)
+      - Could you order a [tool kit](item_name)?
+      - Buy a [drill machine](item_name) for me
+      - I’d like to get a [screwdriver set](item_name)
+      - Place an order for a [ladder](item_name)
+      - One [hose pipe](item_name)
+      - Get a [garden chair](item_name)
+      - Order a [barbecue grill](item_name)
+      - Add a [tent](item_name)
+      - I’d like to buy a [sleeping bag](item_name)
+      - Place an order for a [trekking pole](item_name)
+      - I need a [camping stove](item_name)
+      - Could you order a [camping lantern](item_name)?
+      - Buy me a [travel bag](item_name)
+      - Get a [duffle bag](item_name)
+      - Order a [suitcase](item_name)
+      - I’d like a [wallet](item_name)
+      - Get a [belt](item_name)
+      - Order a [pair of sunglasses](item_name)
+      - Please buy a [cap](item_name)
+      - Add a [scarf](item_name)
+      - I want a [watch](item_name)
+      - Could you order a [ring](item_name)?
+      - Buy a [bracelet](item_name) for me
+      - I’d like to get a [necklace](item_name)
+      - Place an order for a [jacket](item_name)
+      - One [shirt](item_name)
+      - Get a [pair of shoes](item_name)

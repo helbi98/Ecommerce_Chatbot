@@ -1,0 +1,99 @@
+version: "3.1"
+
+nlu:
+  - intent: contact
+    examples: |
+      - How can I contact your company?
+      - What is the customer service number?
+      - Can you give me the email for support?
+      - I need the contact details.
+      - Please share your contact info.
+      - How do I get in touch with your company?
+      - Provide me the customer care contact number.
+      - Can you give me the support email address?
+      - I want to contact someone at your company.
+      - What’s the best way to reach you?
+      - Give me your support phone number.
+      - How do I reach your customer service?
+      - Tell me the contact email for your team.
+      - Can you provide your official contact number?
+      - I need help, who can I contact?
+      - How do I speak to your support team?
+      - What’s your email for inquiries?
+      - Can you tell me your customer care contact?
+      - I want to know your support contact info.
+      - How do I find your contact details?
+      - Can you send me your contact number?
+      - Where can I find your email for assistance?
+      - Tell me the phone number for customer care.
+      - What’s the contact information for your support team?
+      - How do I reach out to your company?
+      - Do you have a helpline number?
+      - I need to email your customer support.
+      - How do I call your service team?
+      - Give me your support department email.
+      - What’s the best way to contact your company?
+      - I need to talk to someone in your company.
+      - What’s your company’s phone number?
+      - How do I send an email to your support?
+      - Can I call someone for help at your company?
+      - Give me the contact information for support.
+      - What’s your helpdesk number?
+      - Provide your customer care email.
+      - Who do I contact for issues with my order?
+      - What’s the number for your helpline?
+      - How do I get customer support from you?
+      - Where can I find your contact number?
+      - Please give me the contact email for your company.
+      - Can I get your customer service details?
+      - What’s your official contact info?
+      - I need a number to contact your team.
+      - Where do I find your company’s contact information?
+      - Share your support number with me.
+      - How can I reach your team via email?
+      - Is there a phone number to call for help?
+      - Tell me your official contact number.
+      - How can I contact your customer care?
+      - What email should I use for support queries?
+      - Do you have a toll-free number?
+      - What’s the quickest way to contact your company?
+      - I need to call someone at your office.
+      - Provide your customer support phone number.
+      - What email should I use to contact support?
+      - Can I call you for assistance?
+      - Where can I email your team for help?
+      - Share your support contact information.
+      - How can I directly reach your company?
+      - Give me the email ID for customer support.
+      - Is there a contact form on your website?
+      - How do I report an issue to your company?
+      - Can I get the details to contact your team?
+      - Who can I email for help with my order?
+      - What’s your official customer care email?
+      - How can I reach your helpdesk?
+      - Provide the best contact details for your support team.
+      - Can you share your helpline contact number?
+      - What’s the email address for your customer service?
+      - Do you have a WhatsApp number for support?
+      - What’s the direct line to reach customer care?
+      - How do I talk to someone from your team?
+      - Please share the contact details for your company.
+      - Where can I find your email address?
+      - Who can I contact for support issues?
+      - I need to find your customer service number.
+      - Can you help me with your contact information?
+      - Do you have an official email for assistance?
+      - What’s your toll-free contact number?
+      - Where can I send my queries via email?
+      - How do I talk to your customer care executive?
+      - I’d like to get your official contact details.
+      - Tell me the email for reaching out to your company.
+      - How do I connect with your support team?
+      - Where can I get in touch with your service department?
+      - Can you send me your official contact email?
+      - What’s the phone number for customer service inquiries?
+      - How do I submit an inquiry to your company?
+      - Please provide your official customer care number.
+      - Is there a contact number for urgent issues?
+      - How can I contact your company for help?
+      - Tell me the best way to reach out to your support team.

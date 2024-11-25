@@ -1,0 +1,94 @@
+version: "3.1"
+
+nlu:
+  - intent: inform
+    examples: |
+      - My order number is [45678](order_number)
+      - The order number is [12345](order_number)
+      - My order number is [98765](order_number)
+      - [45678](order_number)
+      - [12345](order_number)
+      - [98765](order_number)
+      - Here is the order number: [56789](order_number)
+      - Order number: [12345](order_number)
+      - It's [98765](order_number)
+      - My number is [56789](order_number)
+      - The number is [98765](order_number)
+      - [23456](order_number)
+      - Order is [67890](order_number)
+      - It’s [23456](order_number)
+      - [98765](order_number), that’s my order number
+      - Order ID: [34567](order_number)
+      - [45678](order_number) is the order number
+      - [56789](order_number), my order number
+      - My purchase number is [98765](order_number)
+      - This is my order number: [23456](order_number)
+      - [67890](order_number) is the number
+      - The ID is [12345](order_number)
+      - [34567](order_number) is the purchase ID
+      - Order reference: [45678](order_number)
+      - [56789](order_number) is my order reference
+      - The purchase ID is [12345](order_number)
+      - [98765](order_number) is my purchase number
+      - [23456](order_number) is the code
+      - Order code: [67890](order_number)
+      - It is [45678](order_number)
+      - [56789](order_number) is the ID
+      - My reference number: [12345](order_number)
+      - The number I have is [98765](order_number)
+      - [23456](order_number) is the reference
+      - [67890](order_number), my order
+      - Here’s the order ID: [34567](order_number)
+      - I found my order number: [12345](order_number)
+      - [98765](order_number) is the number I see
+      - The reference ID is [45678](order_number)
+      - [56789](order_number), that’s what I have
+      - I’ve got [12345](order_number)
+      - My order is [98765](order_number)
+      - I located the ID: [23456](order_number)
+      - [67890](order_number), please use this
+      - I think it’s [45678](order_number)
+      - Order ID [56789](order_number)
+      - Use [12345](order_number)
+      - [98765](order_number) is what I have
+      - Purchase ID: [23456](order_number)
+      - [67890](order_number), my order ID
+      - [34567](order_number), that’s the number
+      - It should be [12345](order_number)
+      - [98765](order_number) is the number
+      - My order code is [45678](order_number)
+      - [56789](order_number) is my ID
+      - [12345](order_number), that’s correct
+      - [98765](order_number), I think
+      - My order ref is [23456](order_number)
+      - [67890](order_number), here it is
+      - The number is [34567](order_number)
+      - [12345](order_number) is what I see
+      - The order ref is [98765](order_number)
+      - [45678](order_number), my order
+      - [56789](order_number) is the reference number
+      - Here’s the ID: [12345](order_number)
+      - It looks like [98765](order_number)
+      - The code is [23456](order_number)
+      - [67890](order_number) is the reference ID
+      - It’s [45678](order_number), my order number
+      - This should be it: [56789](order_number)
+      - My reference is [12345](order_number)
+      - [98765](order_number), please use this ID
+      - [23456](order_number), the number I have
+      - Here’s the number: [67890](order_number)
+      - That’s [34567](order_number)
+      - [12345](order_number) is my reference
+      - The ID I have is [98765](order_number)
+      - [45678](order_number), I believe
+      - The order ID is [56789](order_number)
+      - [12345](order_number), yes, that’s correct
+      - [98765](order_number), that’s the number
+      - The reference code is [23456](order_number)
+      - [67890](order_number), here’s the code
+      - Use this: [34567](order_number)
+      - [12345](order_number), use this ID
+      - My ID is [98765](order_number)
+      - The order reference is [45678](order_number)
+      - [56789](order_number), the order number
+      - This ID: [12345](order_number)

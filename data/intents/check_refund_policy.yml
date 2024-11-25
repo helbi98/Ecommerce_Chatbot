@@ -1,0 +1,99 @@
+version: "3.1"
+
+nlu:
+  - intent: check_refund_policy
+    examples: |
+      - What is your refund policy?
+      - Can I get a refund?
+      - Tell me about the refund terms.
+      - How do refunds work?
+      - Explain your refund policy.
+      - I do not know how I could check your reimbursement policy.
+      - Need assistance to check in what cases I can request refunds.
+      - Can I check in what cases I can ask to be reimbursed?
+      - I have to see your refund policy, can you help me?
+      - What are the conditions for refunds?
+      - Under what circumstances can I get a refund?
+      - Can you explain the terms for refunds?
+      - How does your refund process work?
+      - What is the time frame for refunds?
+      - Do you offer refunds for cancellations?
+      - Tell me more about your return and refund policy.
+      - How can I apply for a refund?
+      - Is there a way to see the refund policy?
+      - Can you guide me through your refund terms?
+      - Where can I read about your refund policy?
+      - Do I qualify for a refund?
+      - Are there any restrictions on refunds?
+      - Can I ask for a refund after canceling an order?
+      - I need help understanding your refund policy.
+      - What are the refund rules?
+      - Can I get my money back if I return an item?
+      - How soon can I get a refund?
+      - What is the procedure for refunds?
+      - Tell me if I am eligible for a refund.
+      - Where can I find details about refunds?
+      - What is the process for claiming a refund?
+      - I want to understand how refunds work.
+      - Do you have a policy for reimbursement?
+      - Can you help me find information about refunds?
+      - Are refunds available for all purchases?
+      - Explain the steps to get a refund.
+      - How does your company handle refunds?
+      - Do you offer partial refunds?
+      - Can you clarify your refund policy?
+      - Is there a refund for returned items?
+      - What are the criteria for refunds?
+      - How can I check if I can get a refund?
+      - Please provide details on your refund process.
+      - Are there any fees for refunds?
+      - What is your policy on refunding canceled orders?
+      - Can I claim a refund if the product is defective?
+      - How long does it take to process refunds?
+      - Is there a deadline for requesting refunds?
+      - Can you refund the amount to my account?
+      - Are refunds instant or do they take time?
+      - Do you refund shipping costs as well?
+      - Where can I check your refund guidelines?
+      - What do I need to do to initiate a refund?
+      - I want to learn more about your reimbursement policy.
+      - Can you tell me how your refund system works?
+      - Is there a specific process for refunds?
+      - Can I request a refund after delivery?
+      - Do you have a money-back guarantee?
+      - What happens if I need a refund for my purchase?
+      - Are refunds applicable for discounted items?
+      - Can I get my money back for a damaged product?
+      - Explain how your refund terms apply to orders.
+      - How long will it take to refund my payment?
+      - Is there a difference between refunds and returns?
+      - Do I need proof to get a refund?
+      - Can I request a refund for a partially used item?
+      - Will you refund my payment method directly?
+      - What is the timeline for refunds after cancellation?
+      - Are there any exceptions to your refund policy?
+      - Can I see the detailed terms of refunds?
+      - What should I do if I don't get my refund on time?
+      - Is your refund policy flexible?
+      - Can I claim a refund if my order is delayed?
+      - Do I need to contact support for refunds?
+      - How do I know if I qualify for a refund?
+      - Are there refunds for items purchased on sale?
+      - Can I receive store credit instead of a refund?
+      - Are there any forms to fill out for refunds?
+      - Do you have an online form for refund requests?
+      - Can I check refund eligibility before purchasing?
+      - Are refunds processed on weekends?
+      - Is there a faster way to get my refund?
+      - What happens if my refund is denied?
+      - Can I track the status of my refund request?
+      - How does your refund policy handle damaged goods?
+      - Do you provide refunds for partial shipments?
+      - Are there extra charges for refunds?
+      - What happens to my payment during a refund process?
+      - Do you offer refunds for digital products?
+      - Can I cancel a refund request once submitted?
+      - Are refund policies different for bulk orders?
+      - Does your policy include refunds for lost deliveries?
+      - Is there customer support for refund-related issues?
+      - Can I combine a refund with a new purchase?

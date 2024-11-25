@@ -1,0 +1,12 @@
+# Ignore rasa cache and model files
+.rasa/cache/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore log files
+*.log
+
+# Ignore virtual environment directories
+venv/

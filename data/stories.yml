@@ -1,9 +1,98 @@
 version: "3.1"
-
 stories:
+  - story: Place an order successfully
+    steps:
+      - intent: place_order
+      - action: utter_ask_item_name
+      - intent: inform_item
+        entities:
+          - item_name: "smartphone"
+      - action: action_validate_item  
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
+  - story: Handle invalid item during order placement
+    steps:
+      - intent: place_order
+      - action: utter_ask_item_name
+      - intent: inform_item
+        entities:
+          - item_name: "dress"
+      - action: action_validate_item
 
+# The user provides the order number in the request
+  - story: normal cancel
+    steps:
+      - intent: cancel_order
+        entities:
+          - order_number: "12345"
+      - action: action_set_cancel_context    
+      - action: action_validate_order_number
+      - action: action_cancel_order
+
+# The user provides the order number in the request
+  - story: normal track
+    steps:
+      - intent: track_order
+        entities:
+          - order_number: "12345" 
+      - action: action_set_track_context
+      - action: action_validate_order_number
+      - action: action_track_order
+
+# The user does not provide the order number
+  - story: User wants to cancel an order without order number
+    steps:
+      - intent: cancel_order  
+      - action: action_set_cancel_context
+      - action: utter_ask_order_number
+      - intent: inform 
+        entities:
+          - order_number: "12345"
+      - action: action_validate_order_number
+      - action: action_cancel_order
+
+# The user does not provide the order number
+  - story: User wants to track an order without order number
+    steps:
+      - intent: track_order  
+      - action: action_set_track_context
+      - action: utter_ask_order_number
+      - intent: inform  
+        entities:
+          - order_number: "12345"
+      - action: action_validate_order_number
+      - action: action_track_order
+
+# The user changes their intent
+  - story: User asks for cancel but then switches to track order
+    steps:
+      - intent: cancel_order
+      - action: action_set_cancel_context
+      - action: utter_ask_order_number
+      - intent: track_order 
+      - action: action_set_track_context
+      - action: action_validate_order_number
+      - action: action_track_order
+
+# Invalid order number
+  - story: User provides invalid order number for cancel
+    steps:
+      - intent: cancel_order
+      - action: action_set_cancel_context
+      - action: utter_ask_order_number
+      - intent: inform
+        entities:
+          - order_number: "123" 
+      - action: action_validate_order_number
+#      - action: utter_order_not_found
+
+# Invalid order number
+  - story: User provides invalid order number for tracking
+    steps:
+      - intent: track_order
+      - action: action_set_track_context
+      - action: utter_ask_order_number
+      - intent: inform
+        entities:
+          - order_number: "47"
+      - action: action_validate_order_number
+#      - action: utter_order_not_found

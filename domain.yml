@@ -1,40 +1,68 @@
 version: "3.1"
 
 intents:
+  - place_order
+  - track_order
+  - cancel_order
+  - inform
   - greet
   - goodbye
-  - bot_challenge
-  - place_order
-  - cancel_order
-  - track_order
+  - contact
+  - check_refund_policy
+  - inform_item
+
 
 entities:
-  - Order Number
-  - Company
-  - Customer Support Hours
-  - Customer Support Phone Number
-  - Online Company Portal Info
-  - Website URL
-  - Online Store
-  - Retail Stores
-  - Online Marketplace
-  - Store Location
-  - Store Address
-  - Delivery Date
-  - Email Address
-  - ETA
+  - order_number
+  - item_name
 
+slots:
+  order_number:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: order_number
+  context:
+    type: text 
+    influence_conversation: true 
+    mappings:
+      - type: custom
+  item_name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: item_name    
 
 responses:
+  utter_ask_item_name:
+    - text: "Here are the available items:\n1. Smartphone\n2. Headphones\n3. Laptop\n4. Smartwatch\nPlease select one by name."
+  utter_ask_order_number:
+    - text: "Please provide your order number."
+  utter_order_cancelled:
+    - text: "Order {order_number} has been cancelled."
+  utter_order_tracked:
+    - text: "Your order {order_number} is on the way."
+  utter_order_not_found:
+    - text: "The order number you provided is invalid. It should be a 5-digit number. Please try again."
+  utter_generic_error:
+    - text: "Sorry, I didn't understand that. Could you please clarify?"
   utter_greet:
-  - text: "Hey! How are you?"
-
+    - text: "Hello! How can I assist you today?"
   utter_goodbye:
-  - text: "Bye"
+    - text: "Goodbye! Have a great day!"
+  utter_contact:
+    - text: "You can reach us at support@example.com or call us at +1-800-123-4567."
+  utter_refund_policy:
+    - text: "Our refund policy allows you to return products within 30 days of purchase. For more details, please visit our refund policy page."
+  utter_default:
+    - text: "I'm sorry, I didn't understand that. Can you please rephrase?"  
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+actions:
+  - action_track_order
+  - action_cancel_order
+  - action_set_cancel_context
+  - action_set_track_context
+  - action_validate_order_number
+  - action_validate_item
