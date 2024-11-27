@@ -30,6 +30,11 @@ rules:
       - intent: place_order
       - action: utter_ask_item_name
 
+  - rule: Inform the item to be ordered
+    steps:
+      - intent: inform_item
+      - action: action_validate_item  
+
 
 
 
