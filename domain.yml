@@ -38,26 +38,58 @@ slots:
 responses:
   utter_ask_item_name:
     - text: "Here are the available items:\n1. Smartphone\n2. Headphones\n3. Laptop\n4. Smartwatch\nPlease select one by name."
+    - text: "Available items include:\n1. Smartphone\n2. Headphones\n3. Laptop\n4. Smartwatch\nLet me know which one you'd like."
+    - text: "You can choose from the following items:\n1. Smartphone\n2. Headphones\n3. Laptop\n4. Smartwatch\nPlease specify your choice."
+
   utter_ask_order_number:
     - text: "Please provide your order number."
+    - text: "Can you share your order number, please?"
+    - text: "I need your order number to proceed. Please provide it."
+
   utter_order_cancelled:
     - text: "Order {order_number} has been cancelled."
+    - text: "Your order {order_number} is successfully cancelled."
+    - text: "The cancellation for order {order_number} has been processed."
+
   utter_order_tracked:
     - text: "Your order {order_number} is on the way."
+    - text: "Order {order_number} is currently in transit."
+    - text: "Tracking update: Your order {order_number} is on its way to you."
+
   utter_order_not_found:
     - text: "The order number you provided is invalid. It should be a 5-digit number. Please try again."
+    - text: "I couldn't find any order with that number. Ensure it's a 5-digit number and try again."
+    - text: "That doesn't seem to be a valid order number. Please double-check and provide a 5-digit number."
+
   utter_generic_error:
     - text: "Sorry, I didn't understand that. Could you please clarify?"
+    - text: "I couldn't quite catch that. Could you rephrase it for me?"
+    - text: "I'm not sure I understood. Could you explain it differently?"
+
   utter_greet:
-    - text: "Hello! How can I assist you today?"
+    - text: "Hello! Welcome to XYZ Corporation's e-commerce assistant. I can help you place, track, or cancel orders, and provide information like our refund policy or contact details. How can I assist you today?"
+    - text: "Hi there! I'm your virtual assistant for XYZ Corporation. Whether you need help with orders, tracking, cancellations, or any other information, I'm here for you. What can I do for you today?"
+    - text: "Hey! Welcome to XYZ Corporation's chatbot. I can assist you with placing an order, tracking shipments, canceling orders, or answering your queries about our policies. How can I help you today?"
+
   utter_goodbye:
     - text: "Goodbye! Have a great day!"
+    - text: "Take care! See you next time!"
+    - text: "Bye! Looking forward to helping you again."
+
   utter_contact:
-    - text: "You can reach us at support@example.com or call us at +1-800-123-4567."
+    - text: "You can reach us at support@xyzcorporation.com or call us at +1-800-123-4567."
+    - text: "For assistance, email support@xyzcorporation.com or call us at +1-800-123-4567."
+    - text: "Feel free to contact us via email at support@xyzcorporation.com or by phone at +1-800-123-4567."
+
   utter_refund_policy:
     - text: "Our refund policy allows you to return products within 30 days of purchase. For more details, please visit our refund policy page."
+    - text: "You can return products within 30 days of purchase as per our refund policy. Check our refund policy page for more details."
+    - text: "Returns are accepted within 30 days of purchase under our refund policy. Visit the refund policy page for more info."
+
   utter_default:
-    - text: "I'm sorry, I didn't understand that. Can you please rephrase?"  
+    - text: "I'm sorry, I didn't understand that. Can you please rephrase?"
+    - text: "I didn't catch that. Could you try saying it differently?"
+    - text: "Sorry, I’m not sure what you mean. Can you clarify?"
 
 actions:
   - action_track_order
