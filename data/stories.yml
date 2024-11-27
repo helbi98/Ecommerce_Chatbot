@@ -83,7 +83,6 @@ stories:
         entities:
           - order_number: "123" 
       - action: action_validate_order_number
-#      - action: utter_order_not_found
 
 # Invalid order number
   - story: User provides invalid order number for tracking
@@ -95,4 +94,3 @@ stories:
         entities:
           - order_number: "47"
       - action: action_validate_order_number
-#      - action: utter_order_not_found
